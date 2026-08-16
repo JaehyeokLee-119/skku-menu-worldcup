@@ -41,10 +41,6 @@ async function init() {
 function buildCafeteriaOptions() {
   const names = [...new Set(state.data.map(d => d.cafeteria))];
   el.cafeteriaSelect.innerHTML = "";
-  const allOpt = document.createElement("option");
-  allOpt.value = "__ALL__";
-  allOpt.textContent = "전체 식당 통합";
-  el.cafeteriaSelect.appendChild(allOpt);
   for (const name of names) {
     const opt = document.createElement("option");
     opt.value = name;
@@ -56,7 +52,6 @@ function buildCafeteriaOptions() {
 
 function currentPoolSize() {
   const val = el.cafeteriaSelect.value;
-  if (val === "__ALL__") return state.data.length;
   return state.data.filter(d => d.cafeteria === val).length;
 }
 
@@ -95,7 +90,7 @@ function shuffle(arr) {
 
 function startGame() {
   const val = el.cafeteriaSelect.value;
-  const pool = val === "__ALL__" ? state.data : state.data.filter(d => d.cafeteria === val);
+  const pool = state.data.filter(d => d.cafeteria === val);
   if (!selectedSize || pool.length < selectedSize) {
     alert("선택한 규모만큼 메뉴가 충분하지 않습니다.");
     return;
