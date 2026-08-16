@@ -134,6 +134,11 @@ function renderMatch() {
 
 function fillCard(cardEl, entry) {
   cardEl.innerHTML = `
+    <div class="card-image">
+      ${entry.image
+        ? `<img src="${entry.image}" alt="${entry.main_item}">`
+        : `<div class="image-placeholder">🍽️</div>`}
+    </div>
     <div class="cafeteria-tag">${entry.cafeteria} · ${entry.meal_label}</div>
     ${entry.corner ? `<div class="corner-tag">${entry.corner}</div>` : ""}
     <div class="main-item">${entry.main_item}</div>

@@ -1,0 +1,514 @@
+[
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.18",
+    "price": "5500",
+    "main_item": "뚝배기사골떡만두국",
+    "side_items": [],
+    "all_items": [
+      "뚝배기사골떡만두국"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.18",
+    "price": "6000",
+    "main_item": "제육볶음덮밥",
+    "side_items": [],
+    "all_items": [
+      "제육볶음덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.18",
+    "price": "6800",
+    "main_item": "고구마치즈돈까스",
+    "side_items": [],
+    "all_items": [
+      "고구마치즈돈까스"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.18",
+    "price": "4000",
+    "main_item": "와사비크림치킨",
+    "side_items": [],
+    "all_items": [
+      "와사비크림치킨"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.19",
+    "price": "6000",
+    "main_item": "뚝배기부대찌개+라면사리",
+    "side_items": [],
+    "all_items": [
+      "뚝배기부대찌개+라면사리"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.19",
+    "price": "6000",
+    "main_item": "상하이식오돈불고기덮밥",
+    "side_items": [],
+    "all_items": [
+      "상하이식오돈불고기덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.19",
+    "price": "6800",
+    "main_item": "치즈돈까스",
+    "side_items": [],
+    "all_items": [
+      "치즈돈까스"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.19",
+    "price": "3800",
+    "main_item": "명란군만두",
+    "side_items": [],
+    "all_items": [
+      "명란군만두"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.20",
+    "price": "5500",
+    "main_item": "샤브설렁탕",
+    "side_items": [],
+    "all_items": [
+      "샤브설렁탕"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.20",
+    "price": "6000",
+    "main_item": "훈제오리김치볶음밥+떡갈비",
+    "side_items": [],
+    "all_items": [
+      "훈제오리김치볶음밥+떡갈비"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.20",
+    "price": "6800",
+    "main_item": "쉬림프에그함박",
+    "side_items": [],
+    "all_items": [
+      "쉬림프에그함박"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.20",
+    "price": "3500",
+    "main_item": "고기+김치만두",
+    "side_items": [],
+    "all_items": [
+      "고기+김치만두"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.21",
+    "price": "6000",
+    "main_item": "뚝배기우삼겹고추장찌개",
+    "side_items": [],
+    "all_items": [
+      "뚝배기우삼겹고추장찌개"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.21",
+    "price": "6000",
+    "main_item": "돈치마요덮밥",
+    "side_items": [],
+    "all_items": [
+      "돈치마요덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.21",
+    "price": "3800",
+    "main_item": "왕교자튀김만두",
+    "side_items": [],
+    "all_items": [
+      "왕교자튀김만두"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "6000",
+    "main_item": "뚝배기육개장칼국수",
+    "side_items": [],
+    "all_items": [
+      "뚝배기육개장칼국수"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "6000",
+    "main_item": "데리야끼돈육숙주덮밥",
+    "side_items": [],
+    "all_items": [
+      "데리야끼돈육숙주덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "6000",
+    "main_item": "뚝배기삼겹감자짜글이",
+    "side_items": [],
+    "all_items": [
+      "뚝배기삼겹감자짜글이"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "6000",
+    "main_item": "쇠고기양송이덮밥",
+    "side_items": [],
+    "all_items": [
+      "쇠고기양송이덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "6800",
+    "main_item": "가라아게돈까스",
+    "side_items": [],
+    "all_items": [
+      "가라아게돈까스"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "4000",
+    "main_item": "파채닭강정",
+    "side_items": [],
+    "all_items": [
+      "파채닭강정"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "5500",
+    "main_item": "나주곰탕",
+    "side_items": [],
+    "all_items": [
+      "나주곰탕"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "6000",
+    "main_item": "주꾸미파채불고기덮밥",
+    "side_items": [],
+    "all_items": [
+      "주꾸미파채불고기덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "6800",
+    "main_item": "모둠까스(치킨&생선까스&새우튀김)",
+    "side_items": [],
+    "all_items": [
+      "모둠까스(치킨&생선까스&새우튀김)"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "3500",
+    "main_item": "소떡소떡",
+    "side_items": [],
+    "all_items": [
+      "소떡소떡"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "3500",
+    "main_item": "갈비찐만두",
+    "side_items": [],
+    "all_items": [
+      "갈비찐만두"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "6000",
+    "main_item": "뚝배기만두닭곰탕",
+    "side_items": [],
+    "all_items": [
+      "뚝배기만두닭곰탕"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "6000",
+    "main_item": "고로케김치마파두부덮밥",
+    "side_items": [],
+    "all_items": [
+      "고로케김치마파두부덮밥"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "6800",
+    "main_item": "로제치즈돈까스",
+    "side_items": [],
+    "all_items": [
+      "로제치즈돈까스"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "4000",
+    "main_item": "모둠튀김강정",
+    "side_items": [],
+    "all_items": [
+      "모둠튀김강정"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.14",
+    "price": "6000",
+    "main_item": "뚝배기쇠고기유부전골",
+    "side_items": [],
+    "all_items": [
+      "뚝배기쇠고기유부전골"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "해오름식당",
+    "conspace_cd": "20201251",
+    "corner": "한식 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.14",
+    "price": "6000",
+    "main_item": "청양풍닭안심덮밥",
+    "side_items": [],
+    "all_items": [
+      "청양풍닭안심덮밥"
+    ]
+  }
+]
