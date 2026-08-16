@@ -26,9 +26,13 @@ const el = {
 
 let selectedSize = null;
 
+// 현재는 캠퍼스별 1개 식당만 제공 (자연캠 행단골식당 / 인사캠 은행골식당)
+const ACTIVE_CAFETERIAS = ["행단골식당", "은행골식당"];
+
 async function init() {
   const res = await fetch("data/menus.json");
-  state.data = (await res.json()).map((e, i) => ({ ...e, id: i }));
+  const all = (await res.json()).map((e, i) => ({ ...e, id: i }));
+  state.data = all.filter(e => ACTIVE_CAFETERIAS.includes(e.cafeteria));
   buildCafeteriaOptions();
   updateSizeButtons();
   el.dataInfo.textContent = `총 ${state.data.length}개 메뉴 수집됨 (식당 ${new Set(state.data.map(d => d.cafeteria)).size}곳)`;
