@@ -1405,518 +1405,6 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.18",
-    "price": "6500",
-    "main_item": "동태알탕",
-    "side_items": [],
-    "all_items": [
-      "동태알탕"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.18",
-    "price": "4800",
-    "main_item": "양평해장국",
-    "side_items": [],
-    "all_items": [
-      "양평해장국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.18",
-    "price": "5000",
-    "main_item": "김치찌개",
-    "side_items": [],
-    "all_items": [
-      "김치찌개"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.18",
-    "price": "11000",
-    "main_item": "삼계탕",
-    "side_items": [],
-    "all_items": [
-      "삼계탕"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "08.19",
-    "price": "5000",
-    "main_item": "우삼겹고추장수제비",
-    "side_items": [],
-    "all_items": [
-      "우삼겹고추장수제비"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "08.20",
-    "price": "5500",
-    "main_item": "제육볶음",
-    "side_items": [],
-    "all_items": [
-      "제육볶음"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "싱푸차이나 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "07.06",
-    "price": "",
-    "main_item": "유니자장면",
-    "side_items": [],
-    "all_items": [
-      "유니자장면"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "싱푸차이나 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "07.08",
-    "price": "",
-    "main_item": "유니자장",
-    "side_items": [],
-    "all_items": [
-      "유니자장"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "06.29",
-    "price": "",
-    "main_item": "순두부찌개",
-    "side_items": [],
-    "all_items": [
-      "순두부찌개"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "06.29",
-    "price": "",
-    "main_item": "은행골김치찌",
-    "side_items": [],
-    "all_items": [
-      "은행골김치찌"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "06.29",
-    "price": "",
-    "main_item": "뚝배기불고기&당면사리",
-    "side_items": [],
-    "all_items": [
-      "뚝배기불고기&당면사리"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "가츠엔 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "07.03",
-    "price": "",
-    "main_item": "등심돈가스&감자튀김",
-    "side_items": [],
-    "all_items": [
-      "등심돈가스&감자튀김"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "가츠엔 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "07.03",
-    "price": "",
-    "main_item": "햄마요덮밥",
-    "side_items": [],
-    "all_items": [
-      "햄마요덮밥"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "06.15",
-    "price": "학생1000일반5000",
-    "main_item": "콩나물황태국",
-    "side_items": [],
-    "all_items": [
-      "콩나물황태국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "06.16",
-    "price": "학생1000일반5000",
-    "main_item": "하이라이스",
-    "side_items": [],
-    "all_items": [
-      "하이라이스"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "06.17",
-    "price": "학생1000일반5000",
-    "main_item": "어묵탕&우동사리",
-    "side_items": [],
-    "all_items": [
-      "어묵탕&우동사리"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "06.18",
-    "price": "학생1000일반5000",
-    "main_item": "돈육고추장찌개",
-    "side_items": [],
-    "all_items": [
-      "돈육고추장찌개"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "06.19",
-    "price": "학생1000일반5000",
-    "main_item": "매콤돈육떡찜",
-    "side_items": [],
-    "all_items": [
-      "매콤돈육떡찜"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "06.08",
-    "price": "학생1000일반5000",
-    "main_item": "소고기뭇국",
-    "side_items": [],
-    "all_items": [
-      "소고기뭇국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "06.09",
-    "price": "학생1000일반5000",
-    "main_item": "카레라이스",
-    "side_items": [],
-    "all_items": [
-      "카레라이스"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "06.10",
-    "price": "학생1000일반5000",
-    "main_item": "소고기미역국",
-    "side_items": [],
-    "all_items": [
-      "소고기미역국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "06.12",
-    "price": "학생1000일반5000",
-    "main_item": "감자수제비",
-    "side_items": [],
-    "all_items": [
-      "감자수제비"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "06.01",
-    "price": "학생1000일반5000",
-    "main_item": "김치어묵탕&우동사리",
-    "side_items": [],
-    "all_items": [
-      "김치어묵탕&우동사리"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "06.02",
-    "price": "학생1000일반5000",
-    "main_item": "소고기채소죽",
-    "side_items": [],
-    "all_items": [
-      "소고기채소죽"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "06.04",
-    "price": "학생1000일반5000",
-    "main_item": "경상도식소고기뭇국",
-    "side_items": [],
-    "all_items": [
-      "경상도식소고기뭇국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "06.05",
-    "price": "학생1000일반5000",
-    "main_item": "된장찌개",
-    "side_items": [],
-    "all_items": [
-      "된장찌개"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "05.26",
-    "price": "학생1000일반5000",
-    "main_item": "자장덮밥",
-    "side_items": [],
-    "all_items": [
-      "자장덮밥"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "05.13",
-    "price": "학생1000일반5000",
-    "main_item": "사골조랭이떡국",
-    "side_items": [],
-    "all_items": [
-      "사골조랭이떡국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "04.27",
-    "price": "학생1000일반5000",
-    "main_item": "쇠고기뭇국",
-    "side_items": [],
-    "all_items": [
-      "쇠고기뭇국"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "04.29",
-    "price": "학생1000일반5000",
-    "main_item": "유부주머니어묵탕&우동사리",
-    "side_items": [],
-    "all_items": [
-      "유부주머니어묵탕&우동사리"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "04.30",
-    "price": "학생1000일반5000",
-    "main_item": "고추장찌개",
-    "side_items": [],
-    "all_items": [
-      "고추장찌개"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
-    "conspace_cd": "10201031",
-    "corner": "봄이온 소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "05.01",
-    "price": ".",
-    "main_item": "미운",
-    "side_items": [],
-    "all_items": [
-      "미운"
-    ]
-  },
-  {
-    "campus": "인문사회과학캠퍼스",
     "cafeteria": "법고을식당",
     "conspace_cd": "10201034",
     "corner": "법고을 코너",
@@ -3537,798 +3025,6 @@
       "돈육폭찹덮밥",
       "미역장국",
       "실곤약야채무침"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.18",
-    "price": "5000",
-    "main_item": "떡국",
-    "side_items": [
-      "숯불바베큐바",
-      "견과류멸치볶음",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "떡국",
-      "숯불바베큐바",
-      "견과류멸치볶음",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "08.19",
-    "price": "5000",
-    "main_item": "꼬치어묵탕",
-    "side_items": [
-      "별완자조림",
-      "명엽채볶음",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "꼬치어묵탕",
-      "별완자조림",
-      "명엽채볶음",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "08.20",
-    "price": "5000",
-    "main_item": "고추장찌개",
-    "side_items": [
-      "쌀떡고기산적",
-      "콩자반",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "고추장찌개",
-      "쌀떡고기산적",
-      "콩자반",
-      "배추김치",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "08.21",
-    "price": "5000",
-    "main_item": "짬뽕수제비",
-    "side_items": [
-      "팝콘치킨",
-      "무말랭이무침",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "짬뽕수제비",
-      "팝콘치킨",
-      "무말랭이무침",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "08.10",
-    "price": "5000",
-    "main_item": "돈육비지찌개",
-    "side_items": [
-      "피쉬스틱*타르타르",
-      "오복지무침",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "돈육비지찌개",
-      "피쉬스틱*타르타르",
-      "오복지무침",
-      "배추김치",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.11",
-    "price": "5000",
-    "main_item": "닭개장",
-    "side_items": [
-      "동그랑땡전",
-      "오그락지무침",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "닭개장",
-      "동그랑땡전",
-      "오그락지무침",
-      "배추김치",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "08.12",
-    "price": "5000",
-    "main_item": "된장찌개",
-    "side_items": [
-      "소시지야채볶음",
-      "도시락김",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "된장찌개",
-      "소시지야채볶음",
-      "도시락김",
-      "배추김치",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "08.13",
-    "price": "5000",
-    "main_item": "카레라이스",
-    "side_items": [
-      "유부장국",
-      "꼬마돈가스*케찹",
-      "단무지",
-      "쌀밥"
-    ],
-    "all_items": [
-      "카레라이스",
-      "유부장국",
-      "꼬마돈가스*케찹",
-      "단무지",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "08.14",
-    "price": "5000",
-    "main_item": "장터국밥",
-    "side_items": [
-      "계란후라이",
-      "고추지무침",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "장터국밥",
-      "계란후라이",
-      "고추지무침",
-      "배추김치",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "08.03",
-    "price": "5000",
-    "main_item": "함박스테이크&스크램블에그(사정상 함박스테이크는 떡갈비로변경할수있습니다. )",
-    "side_items": [
-      "모닝빵*딸기잼",
-      "해쉬브라운",
-      "커피or우유"
-    ],
-    "all_items": [
-      "함박스테이크&스크램블에그(사정상 함박스테이크는 떡갈비로변경할수있습니다. )",
-      "모닝빵*딸기잼",
-      "해쉬브라운",
-      "커피or우유"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "08.04",
-    "price": "5000",
-    "main_item": "동태매운탕",
-    "side_items": [
-      "동그랑땡조림",
-      "도시락김",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "동태매운탕",
-      "동그랑땡조림",
-      "도시락김",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "08.05",
-    "price": "5000",
-    "main_item": "고깃집볶음밥&계란후라이",
-    "side_items": [
-      "깻잎지무침",
-      "깍두기",
-      "탄산음료"
-    ],
-    "all_items": [
-      "고깃집볶음밥&계란후라이",
-      "깻잎지무침",
-      "깍두기",
-      "탄산음료"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "08.06",
-    "price": "5000",
-    "main_item": "돼지고기춘장볶음",
-    "side_items": [
-      "김치전",
-      "쌀밥",
-      "깍두기",
-      "피크닉"
-    ],
-    "all_items": [
-      "돼지고기춘장볶음",
-      "김치전",
-      "쌀밥",
-      "깍두기",
-      "피크닉"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "08.07",
-    "price": "5000",
-    "main_item": "북어계란국",
-    "side_items": [
-      "알찬소시지전",
-      "치커리생채",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "북어계란국",
-      "알찬소시지전",
-      "치커리생채",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "07.27",
-    "price": "5000",
-    "main_item": "꼬치어묵탕",
-    "side_items": [
-      "옛날소시지전&케찹",
-      "깻잎지무침",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "꼬치어묵탕",
-      "옛날소시지전&케찹",
-      "깻잎지무침",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "07.28",
-    "price": "5000",
-    "main_item": "짬뽕수제비",
-    "side_items": [
-      "춘권튀김",
-      "비타장아찌",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "짬뽕수제비",
-      "춘권튀김",
-      "비타장아찌",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "07.29",
-    "price": "5000",
-    "main_item": "조기구이",
-    "side_items": [
-      "배추된장국",
-      "청포묵김가루무침",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "조기구이",
-      "배추된장국",
-      "청포묵김가루무침",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "07.30",
-    "price": "5000",
-    "main_item": "떡국",
-    "side_items": [
-      "꼬마돈가스&케찹",
-      "멸치견과류볶음",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "떡국",
-      "꼬마돈가스&케찹",
-      "멸치견과류볶음",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "07.31",
-    "price": "5000",
-    "main_item": "콩나물해장국",
-    "side_items": [
-      "쌀떡고기산적조림",
-      "파래김자반",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "콩나물해장국",
-      "쌀떡고기산적조림",
-      "파래김자반",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "07.20",
-    "price": "5000",
-    "main_item": "돈육비지찌개",
-    "side_items": [
-      "소시지야채볶음",
-      "김자반볶음",
-      "쌀밥",
-      "깍두기"
-    ],
-    "all_items": [
-      "돈육비지찌개",
-      "소시지야채볶음",
-      "김자반볶음",
-      "쌀밥",
-      "깍두기"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "07.21",
-    "price": "5000",
-    "main_item": "장터국밥",
-    "side_items": [
-      "미트볼강정",
-      "고들빼기무침",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "장터국밥",
-      "미트볼강정",
-      "고들빼기무침",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "07.22",
-    "price": "5000",
-    "main_item": "베이컨&스크램블에그",
-    "side_items": [
-      "모닝빵*딸기잼",
-      "해쉬브라운",
-      "커피or우유"
-    ],
-    "all_items": [
-      "베이컨&스크램블에그",
-      "모닝빵*딸기잼",
-      "해쉬브라운",
-      "커피or우유"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "07.23",
-    "price": "5000",
-    "main_item": "고추장찌개",
-    "side_items": [
-      "갈비만두찜&간장",
-      "감자채볶음",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "고추장찌개",
-      "갈비만두찜&간장",
-      "감자채볶음",
-      "배추김치",
-      "쌀밥"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "금",
-    "mmdd": "07.24",
-    "price": "5000",
-    "main_item": "닭갈비덮밥",
-    "side_items": [
-      "어묵국",
-      "도시락김",
-      "고추지무침",
-      "배추김치"
-    ],
-    "all_items": [
-      "닭갈비덮밥",
-      "어묵국",
-      "도시락김",
-      "고추지무침",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "07.13",
-    "price": "5000",
-    "main_item": "참치김치찌개",
-    "side_items": [
-      "치킨너겟&허니머스타드",
-      "오이지무침",
-      "쌀밥",
-      "깍두기"
-    ],
-    "all_items": [
-      "참치김치찌개",
-      "치킨너겟&허니머스타드",
-      "오이지무침",
-      "쌀밥",
-      "깍두기"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "07.14",
-    "price": "5000",
-    "main_item": "장조림버터밥",
-    "side_items": [
-      "유부장국",
-      "물만두찜",
-      "배추김치"
-    ],
-    "all_items": [
-      "장조림버터밥",
-      "유부장국",
-      "물만두찜",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "07.15",
-    "price": "5000",
-    "main_item": "[초복] 전복죽",
-    "side_items": [
-      "꼬마돈가스*케찹",
-      "푸실리샐러드",
-      "배추김치",
-      "요구르트"
-    ],
-    "all_items": [
-      "[초복] 전복죽",
-      "꼬마돈가스*케찹",
-      "푸실리샐러드",
-      "배추김치",
-      "요구르트"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "07.16",
-    "price": "5000",
-    "main_item": "옹심이만두수제비",
-    "side_items": [
-      "고추튀김",
-      "마카로니콘샐러드",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "옹심이만두수제비",
-      "고추튀김",
-      "마카로니콘샐러드",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "월",
-    "mmdd": "07.06",
-    "price": "5000",
-    "main_item": "육개장",
-    "side_items": [
-      "계란옷해물완자",
-      "청포묵김가루무침",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "육개장",
-      "계란옷해물완자",
-      "청포묵김가루무침",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "화",
-    "mmdd": "07.07",
-    "price": "5000",
-    "main_item": "떡국",
-    "side_items": [
-      "숯불바베큐바",
-      "환어묵피망볶음",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "떡국",
-      "숯불바베큐바",
-      "환어묵피망볶음",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "수",
-    "mmdd": "07.08",
-    "price": "5000",
-    "main_item": "꼬치어묵탕",
-    "side_items": [
-      "돈육메추리알장조림",
-      "명엽채볶음",
-      "쌀밥",
-      "배추김치"
-    ],
-    "all_items": [
-      "꼬치어묵탕",
-      "돈육메추리알장조림",
-      "명엽채볶음",
-      "쌀밥",
-      "배추김치"
-    ]
-  },
-  {
-    "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
-    "conspace_cd": "20201104",
-    "corner": "1F 봄이온소반 코너",
-    "meal_type": "B",
-    "meal_label": "조식",
-    "weekday": "목",
-    "mmdd": "07.09",
-    "price": "5000",
-    "main_item": "고추장찌개",
-    "side_items": [
-      "쌀떡고기산적*간장",
-      "푸실리샐러드",
-      "배추김치",
-      "쌀밥"
-    ],
-    "all_items": [
-      "고추장찌개",
-      "쌀떡고기산적*간장",
-      "푸실리샐러드",
-      "배추김치",
-      "쌀밥"
     ]
   },
   {
@@ -6033,6 +4729,1449 @@
       "새우튀김우동+유부초밥세트[10,000]",
       "마제소바[10,000]",
       "돈토로동[11,000]"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.17",
+    "price": "",
+    "main_item": "등심돈가스(5.5)/점보돈가스(7.5)",
+    "side_items": [
+      "[화] 치즈돈가스(6.5)",
+      "[수] 카레돈가스(6.5)",
+      "[목] 트렌드미식회 김호윤의 봉골레파스타(7.5)",
+      "[금] 8/14 : 송계옥의 닭칼국수 트렌드미식회7.5 /      8/21:피카츄&등심돈가스 (8.0)"
+    ],
+    "all_items": [
+      "등심돈가스(5.5)/점보돈가스(7.5)",
+      "[화] 치즈돈가스(6.5)",
+      "[수] 카레돈가스(6.5)",
+      "[목] 트렌드미식회 김호윤의 봉골레파스타(7.5)",
+      "[금] 8/14 : 송계옥의 닭칼국수 트렌드미식회7.5 /      8/21:피카츄&등심돈가스 (8.0)"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 피키피커스 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.17",
+    "price": "",
+    "main_item": "셀프라면",
+    "side_items": [
+      "오늘의 프로틴",
+      "오늘의 선식",
+      "구운닭가슴살샐러드",
+      "치킨텐더샐러드",
+      "베이컨포테이토샐러드",
+      "두부콩불고기샐러드",
+      "(방학 기간 팝업델리는 싱푸코너에서 제공됩니다. )"
+    ],
+    "all_items": [
+      "셀프라면",
+      "오늘의 프로틴",
+      "오늘의 선식",
+      "구운닭가슴살샐러드",
+      "치킨텐더샐러드",
+      "베이컨포테이토샐러드",
+      "두부콩불고기샐러드",
+      "(방학 기간 팝업델리는 싱푸코너에서 제공됩니다. )"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.18",
+    "price": "5000",
+    "main_item": "쇠고기미역국",
+    "side_items": [
+      "스모크햄구이&케찹",
+      "오이생채",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "쇠고기미역국",
+      "스모크햄구이&케찹",
+      "오이생채",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.19",
+    "price": "5000",
+    "main_item": "제육생야채비빔밥",
+    "side_items": [
+      "김말이튀김",
+      "우동국",
+      "배추김치"
+    ],
+    "all_items": [
+      "제육생야채비빔밥",
+      "김말이튀김",
+      "우동국",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.20",
+    "price": "5000",
+    "main_item": "만두육개장",
+    "side_items": [
+      "오징어파전",
+      "고추지무침",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "만두육개장",
+      "오징어파전",
+      "고추지무침",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.21",
+    "price": "5000",
+    "main_item": "김치날치알비빔밥",
+    "side_items": [
+      "미니냉모밀",
+      "오징어링*칠리s",
+      "미역줄기볶음",
+      "깍두기"
+    ],
+    "all_items": [
+      "김치날치알비빔밥",
+      "미니냉모밀",
+      "오징어링*칠리s",
+      "미역줄기볶음",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "5000",
+    "main_item": "설렁탕&소면사리",
+    "side_items": [
+      "탕수육",
+      "고추장멸치볶음",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "설렁탕&소면사리",
+      "탕수육",
+      "고추장멸치볶음",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "5000",
+    "main_item": "시래기순살감자탕",
+    "side_items": [
+      "잡채해물완자",
+      "미역줄기볶음",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "시래기순살감자탕",
+      "잡채해물완자",
+      "미역줄기볶음",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "5000",
+    "main_item": "냉김치말이국수",
+    "side_items": [
+      "장떡전",
+      "수박",
+      "미니쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "냉김치말이국수",
+      "장떡전",
+      "수박",
+      "미니쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "5000",
+    "main_item": "떡볶이&계란",
+    "side_items": [
+      "김말이튀김",
+      "후리가케주먹밥",
+      "배추김치",
+      "요구르트"
+    ],
+    "all_items": [
+      "떡볶이&계란",
+      "김말이튀김",
+      "후리가케주먹밥",
+      "배추김치",
+      "요구르트"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.14",
+    "price": "5000",
+    "main_item": "옛날도시락비빔밥",
+    "side_items": [
+      "핫도그*케찹",
+      "깍두기",
+      "피크닉"
+    ],
+    "all_items": [
+      "옛날도시락비빔밥",
+      "핫도그*케찹",
+      "깍두기",
+      "피크닉"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "5000",
+    "main_item": "돼지고기김치찌개",
+    "side_items": [
+      "옥수수전",
+      "오이지무침",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "돼지고기김치찌개",
+      "옥수수전",
+      "오이지무침",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.04",
+    "price": "5000",
+    "main_item": "나주곰탕&당면사리",
+    "side_items": [
+      "숯불바베큐바*케찹",
+      "무말랭이무침",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "나주곰탕&당면사리",
+      "숯불바베큐바*케찹",
+      "무말랭이무침",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.05",
+    "price": "5000",
+    "main_item": "치킨마요덮밥",
+    "side_items": [
+      "우동국",
+      "소떡소떡",
+      "배추김치"
+    ],
+    "all_items": [
+      "치킨마요덮밥",
+      "우동국",
+      "소떡소떡",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.06",
+    "price": "5000",
+    "main_item": "햄부대찌개",
+    "side_items": [
+      "명란교자만두",
+      "콩자반",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "햄부대찌개",
+      "명란교자만두",
+      "콩자반",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.07",
+    "price": "5000",
+    "main_item": "순두부찌개",
+    "side_items": [
+      "고기메밀전병",
+      "파래김자반",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "순두부찌개",
+      "고기메밀전병",
+      "파래김자반",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.27",
+    "price": "5000",
+    "main_item": "얼큰닭개장",
+    "side_items": [
+      "잡채해물완자",
+      "오그락지무침",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "얼큰닭개장",
+      "잡채해물완자",
+      "오그락지무침",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "07.28",
+    "price": "5000",
+    "main_item": "비벼먹는김치찌개",
+    "side_items": [
+      "쌀밥&계란후라이&김가루",
+      "어묵피망볶음",
+      "오이지무침",
+      "깍두기"
+    ],
+    "all_items": [
+      "비벼먹는김치찌개",
+      "쌀밥&계란후라이&김가루",
+      "어묵피망볶음",
+      "오이지무침",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "07.29",
+    "price": "5000",
+    "main_item": "자장밥",
+    "side_items": [
+      "유부국",
+      "탕수육",
+      "배추김치"
+    ],
+    "all_items": [
+      "자장밥",
+      "유부국",
+      "탕수육",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.30",
+    "price": "5000",
+    "main_item": "제육김치덮밥",
+    "side_items": [
+      "감자전",
+      "미역줄기볶음",
+      "깍두기",
+      "요구르트"
+    ],
+    "all_items": [
+      "제육김치덮밥",
+      "감자전",
+      "미역줄기볶음",
+      "깍두기",
+      "요구르트"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "07.31",
+    "price": "5000",
+    "main_item": "만두전골찌개",
+    "side_items": [
+      "데리야끼너비아니구이",
+      "고추지무침",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "만두전골찌개",
+      "데리야끼너비아니구이",
+      "고추지무침",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.20",
+    "price": "5000",
+    "main_item": "우삼겹된장찌개",
+    "side_items": [
+      "김치전",
+      "고구마샐러드",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "우삼겹된장찌개",
+      "김치전",
+      "고구마샐러드",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "07.21",
+    "price": "5000",
+    "main_item": "냉김치말이국수",
+    "side_items": [
+      "해물파전",
+      "도토리묵무침",
+      "미니쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "냉김치말이국수",
+      "해물파전",
+      "도토리묵무침",
+      "미니쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "07.22",
+    "price": "5000",
+    "main_item": "쇠고기미역국",
+    "side_items": [
+      "생선가스&타르타르",
+      "오복지무침",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "쇠고기미역국",
+      "생선가스&타르타르",
+      "오복지무침",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.23",
+    "price": "5000",
+    "main_item": "팔보채덮밥",
+    "side_items": [
+      "군만두",
+      "짬뽕국",
+      "배추김치"
+    ],
+    "all_items": [
+      "팔보채덮밥",
+      "군만두",
+      "짬뽕국",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "07.24",
+    "price": "5000",
+    "main_item": "설렁탕&소면사리",
+    "side_items": [
+      "교자만두&탕수육",
+      "오이된장무침",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "설렁탕&소면사리",
+      "교자만두&탕수육",
+      "오이된장무침",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.13",
+    "price": "5000",
+    "main_item": "나주곰탕",
+    "side_items": [
+      "김치메밀전병",
+      "고구마맛탕",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "나주곰탕",
+      "김치메밀전병",
+      "고구마맛탕",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "07.14",
+    "price": "5000",
+    "main_item": "가츠동",
+    "side_items": [
+      "우동국",
+      "떡구이",
+      "양배추샐러드&드레싱",
+      "배추김치"
+    ],
+    "all_items": [
+      "가츠동",
+      "우동국",
+      "떡구이",
+      "양배추샐러드&드레싱",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "07.15",
+    "price": "5000",
+    "main_item": "[초복] 닭곰탕&소면사리",
+    "side_items": [
+      "장떡전",
+      "고추장멸치볶음",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "[초복] 닭곰탕&소면사리",
+      "장떡전",
+      "고추장멸치볶음",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.16",
+    "price": "5000",
+    "main_item": "시래기순살감자탕",
+    "side_items": [
+      "잡채해물완자",
+      "명엽채조림",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "시래기순살감자탕",
+      "잡채해물완자",
+      "명엽채조림",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.06",
+    "price": "5000",
+    "main_item": "제육김치덮밥",
+    "side_items": [
+      "유부국",
+      "별완자데리야끼조림",
+      "깍두기"
+    ],
+    "all_items": [
+      "제육김치덮밥",
+      "유부국",
+      "별완자데리야끼조림",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "07.08",
+    "price": "5000",
+    "main_item": "얼큰닭개장",
+    "side_items": [
+      "오징어파전",
+      "고추지무침",
+      "쌀밥",
+      "배추김치"
+    ],
+    "all_items": [
+      "얼큰닭개장",
+      "오징어파전",
+      "고추지무침",
+      "쌀밥",
+      "배추김치"
+    ]
+  },
+  {
+    "campus": "자연과학캠퍼스",
+    "cafeteria": "행단골식당",
+    "conspace_cd": "20201104",
+    "corner": "1F 봄이온소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.09",
+    "price": "5000",
+    "main_item": "모둠햄부대찌개&라면사리",
+    "side_items": [
+      "부추전",
+      "멸치견과류볶음",
+      "쌀밥",
+      "깍두기"
+    ],
+    "all_items": [
+      "모둠햄부대찌개&라면사리",
+      "부추전",
+      "멸치견과류볶음",
+      "쌀밥",
+      "깍두기"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "5000",
+    "main_item": "청국장찌개",
+    "side_items": [],
+    "all_items": [
+      "청국장찌개"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "5000",
+    "main_item": "은행골김치찌개",
+    "side_items": [],
+    "all_items": [
+      "은행골김치찌개"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "6500",
+    "main_item": "불고기뚝배기&당면사리",
+    "side_items": [],
+    "all_items": [
+      "불고기뚝배기&당면사리"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "11000",
+    "main_item": "삼계탕",
+    "side_items": [],
+    "all_items": [
+      "삼계탕"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "7000",
+    "main_item": "치즈돈가스",
+    "side_items": [],
+    "all_items": [
+      "치즈돈가스"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.10",
+    "price": "6500",
+    "main_item": "치킨가라아게카레라이스",
+    "side_items": [],
+    "all_items": [
+      "치킨가라아게카레라이스"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "5500",
+    "main_item": "춘천식닭갈비",
+    "side_items": [],
+    "all_items": [
+      "춘천식닭갈비"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "10000",
+    "main_item": "도쿄함박스테이크",
+    "side_items": [],
+    "all_items": [
+      "도쿄함박스테이크"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "싱푸차이나 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.11",
+    "price": "8000",
+    "main_item": "초계국수",
+    "side_items": [],
+    "all_items": [
+      "초계국수"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.12",
+    "price": "5000",
+    "main_item": "열무보리비빔밥",
+    "side_items": [],
+    "all_items": [
+      "열무보리비빔밥"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "4800",
+    "main_item": "소고기미역국",
+    "side_items": [],
+    "all_items": [
+      "소고기미역국"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.13",
+    "price": "6500",
+    "main_item": "뚝배기날치알밥",
+    "side_items": [],
+    "all_items": [
+      "뚝배기날치알밥"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.14",
+    "price": "6500",
+    "main_item": "누룽지장각백숙",
+    "side_items": [],
+    "all_items": [
+      "누룽지장각백숙"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.14",
+    "price": "11000",
+    "main_item": "전복반계탕",
+    "side_items": [],
+    "all_items": [
+      "전복반계탕"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "5000",
+    "main_item": "돈육두부두루치기",
+    "side_items": [],
+    "all_items": [
+      "돈육두부두루치기"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "5000",
+    "main_item": "은행김치찌개",
+    "side_items": [],
+    "all_items": [
+      "은행김치찌개"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "6000",
+    "main_item": "나주곰탕&당면사리",
+    "side_items": [],
+    "all_items": [
+      "나주곰탕&당면사리"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "11000",
+    "main_item": "건강삼계탕",
+    "side_items": [],
+    "all_items": [
+      "건강삼계탕"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "싱푸차이나 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "5500",
+    "main_item": "새우볶음밥&자장소스",
+    "side_items": [],
+    "all_items": [
+      "새우볶음밥&자장소스"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "싱푸차이나 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "5500",
+    "main_item": "유니자장면",
+    "side_items": [],
+    "all_items": [
+      "유니자장면"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "싱푸차이나 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "5500",
+    "main_item": "냉모밀",
+    "side_items": [],
+    "all_items": [
+      "냉모밀"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "싱푸차이나 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "08.03",
+    "price": "3000",
+    "main_item": "찐만두",
+    "side_items": [],
+    "all_items": [
+      "찐만두"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "08.04",
+    "price": "5000",
+    "main_item": "짬뽕순두부찌개",
+    "side_items": [],
+    "all_items": [
+      "짬뽕순두부찌개"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "08.05",
+    "price": "6500",
+    "main_item": "주꾸미돌솥비빔밥",
+    "side_items": [],
+    "all_items": [
+      "주꾸미돌솥비빔밥"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.06",
+    "price": "5500",
+    "main_item": "간장찜닭&당면사리",
+    "side_items": [],
+    "all_items": [
+      "간장찜닭&당면사리"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "08.06",
+    "price": "6500",
+    "main_item": "부대찌개&라면사리",
+    "side_items": [],
+    "all_items": [
+      "부대찌개&라면사리"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "08.07",
+    "price": "5500",
+    "main_item": "파채불고기",
+    "side_items": [],
+    "all_items": [
+      "파채불고기"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.27",
+    "price": "4800",
+    "main_item": "비지찌개",
+    "side_items": [],
+    "all_items": [
+      "비지찌개"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.27",
+    "price": "6000",
+    "main_item": "베이컨김치치즈돌솥밥",
+    "side_items": [],
+    "all_items": [
+      "베이컨김치치즈돌솥밥"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.27",
+    "price": "5500",
+    "main_item": "등심돈가스&감자튀김",
+    "side_items": [],
+    "all_items": [
+      "등심돈가스&감자튀김"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.27",
+    "price": "6000",
+    "main_item": "나시고랭&계란후라이",
+    "side_items": [],
+    "all_items": [
+      "나시고랭&계란후라이"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "월",
+    "mmdd": "07.27",
+    "price": "6500",
+    "main_item": "가츠동",
+    "side_items": [],
+    "all_items": [
+      "가츠동"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "화",
+    "mmdd": "07.28",
+    "price": "6000",
+    "main_item": "사골떡만둣국",
+    "side_items": [],
+    "all_items": [
+      "사골떡만둣국"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "수",
+    "mmdd": "07.29",
+    "price": "5000",
+    "main_item": "우삼겹된장찌개",
+    "side_items": [],
+    "all_items": [
+      "우삼겹된장찌개"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.30",
+    "price": "5000",
+    "main_item": "노량진폭탄비빔밥",
+    "side_items": [],
+    "all_items": [
+      "노량진폭탄비빔밥"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.30",
+    "price": "6000",
+    "main_item": "설렁탕&소면사리",
+    "side_items": [],
+    "all_items": [
+      "설렁탕&소면사리"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.30",
+    "price": "6000",
+    "main_item": "소시지도리아",
+    "side_items": [],
+    "all_items": [
+      "소시지도리아"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "가츠엔 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "목",
+    "mmdd": "07.30",
+    "price": "6500",
+    "main_item": "오므라이스&함박스테이크",
+    "side_items": [],
+    "all_items": [
+      "오므라이스&함박스테이크"
+    ]
+  },
+  {
+    "campus": "인문사회과학캠퍼스",
+    "cafeteria": "은행골식당",
+    "conspace_cd": "10201031",
+    "corner": "봄이온 소반 코너",
+    "meal_type": "L",
+    "meal_label": "중식",
+    "weekday": "금",
+    "mmdd": "07.31",
+    "price": "4800",
+    "main_item": "햄감자짜글이",
+    "side_items": [],
+    "all_items": [
+      "햄감자짜글이"
     ]
   }
 ]
