@@ -30,6 +30,41 @@ body {
   min-height: 100vh;
 }
 
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px 20px 0;
+}
+
+.topbar .brand {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.topnav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.topnav-links a {
+  color: var(--sub);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.topnav-links a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
 #app {
   max-width: 720px;
   margin: 0 auto;
@@ -38,6 +73,63 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.stats-app { align-items: stretch; }
+
+.stats-title { text-align: center; margin-bottom: 4px; }
+.menu-tier-title { margin-top: 44px; }
+.menu-cafeteria-select { max-width: 280px; margin: 16px auto 0; }
+
+.stats-table-wrap {
+  overflow-x: auto;
+  margin-top: 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.stats-table th, .stats-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.stats-table th {
+  color: var(--sub);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.stats-table tr:last-child td { border-bottom: none; }
+
+.cafeteria-name { font-weight: 600; }
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.tier-S { background: #d4af37; }
+.tier-A { background: #c8582f; }
+.tier-B { background: #4a7c59; }
+.tier-C { background: #4472a8; }
+.tier-D { background: #7a7268; }
+.tier-F { background: #555049; }
+.tier-\- { background: var(--sub); }
 
 .screen { display: flex; flex-direction: column; align-items: center; flex: 1; }
 .hidden { display: none !important; }

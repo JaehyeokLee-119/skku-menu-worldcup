@@ -1,0 +1,70 @@
+-- 식당별 승/패 집계 테이블
+create table cafeteria_stats (
+  cafeteria text primary key,
+  wins integer not null default 0,
+  losses integer not null default 0
+);
+
+insert into cafeteria_stats (cafeteria, wins, losses) values
+  ('패컬티식당', 0, 0),
+  ('은행골식당', 0, 0),
+  ('법고을식당', 0, 0),
+  ('금잔디식당', 0, 0),
+  ('행단골식당', 0, 0),
+  ('구시재식당', 0, 0),
+  ('해오름식당', 0, 0),
+  ('THE S LOUNGE', 0, 0);
+
+-- 동시 요청에도 안전하게 +1 하는 함수
+create or replace function record_match(winner text, loser text)
+returns void as $$
+begin
+  update cafeteria_stats set wins = wins + 1 where cafeteria = winner;
+  update cafeteria_stats set losses = losses + 1 where cafeteria = loser;
+end;
+$$ language plpgsql security definer;
+
+-- RLS 활성화: 익명 사용자는 읽기 + record_match 호출만 가능 (직접 UPDATE/DELETE 불가)
+alter table cafeteria_stats enable row level security;
+
+create policy "public can read stats"
+  on cafeteria_stats for select
+  to anon
+  using (true);
+
+grant execute on function record_match(text, text) to anon;
+
+-- 개별 메뉴 승/패 집계 테이블 (식당별 메뉴 티어표용)
+create table menu_stats (
+  id text primary key,
+  cafeteria text not null,
+  main_item text not null,
+  wins integer not null default 0,
+  losses integer not null default 0
+);
+
+alter table menu_stats enable row level security;
+
+create policy "public can read menu stats"
+  on menu_stats for select
+  to anon
+  using (true);
+
+-- 처음 나온 메뉴는 upsert로 자동 생성, 이후엔 +1
+create or replace function record_menu_match(
+  winner_id text, winner_cafeteria text, winner_main text,
+  loser_id text, loser_cafeteria text, loser_main text
+)
+returns void as $$
+begin
+  insert into menu_stats (id, cafeteria, main_item, wins, losses)
+  values (winner_id, winner_cafeteria, winner_main, 1, 0)
+  on conflict (id) do update set wins = menu_stats.wins + 1;
+
+  insert into menu_stats (id, cafeteria, main_item, wins, losses)
+  values (loser_id, loser_cafeteria, loser_main, 0, 1)
+  on conflict (id) do update set losses = menu_stats.losses + 1;
+end;
+$$ language plpgsql security definer;
+
+grant execute on function record_menu_match(text, text, text, text, text, text) to anon;

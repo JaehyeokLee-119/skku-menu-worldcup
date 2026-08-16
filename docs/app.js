@@ -128,8 +128,8 @@ function renderMatch() {
   fillCard(el.cardLeft, left);
   fillCard(el.cardRight, right);
 
-  el.cardLeft.onclick = () => pick(left);
-  el.cardRight.onclick = () => pick(right);
+  el.cardLeft.onclick = () => pick(left, right);
+  el.cardRight.onclick = () => pick(right, left);
 }
 
 function fillCard(cardEl, entry) {
@@ -142,7 +142,9 @@ function fillCard(cardEl, entry) {
   `;
 }
 
-function pick(winner) {
+function pick(winner, loser) {
+  recordMatch(winner, loser);
+
   state.nextRound.push(winner);
   state.matchIndex++;
 
