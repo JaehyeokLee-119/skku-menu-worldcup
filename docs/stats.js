@@ -44,29 +44,6 @@ function tierRow(cells) {
   `;
 }
 
-async function renderCafeteriaStats() {
-  const loadingEl = document.getElementById("statsLoading");
-  const wrapEl = document.getElementById("statsTableWrap");
-  const bodyEl = document.getElementById("statsBody");
-
-  let rows;
-  try {
-    rows = await fetchCafeteriaStats();
-  } catch (err) {
-    loadingEl.textContent = "통계를 불러오지 못했어요. 잠시 후 다시 시도해주세요.";
-    return;
-  }
-
-  const filtered = rows.filter(r => ACTIVE_CAFETERIAS.includes(r.cafeteria));
-
-  bodyEl.innerHTML = withRate(filtered)
-    .map(r => tierRow({ name: r.cafeteria, wins: r.wins, losses: r.losses, winRate: r.winRate }))
-    .join("");
-
-  loadingEl.classList.add("hidden");
-  wrapEl.classList.remove("hidden");
-}
-
 async function renderMenuStats() {
   const loadingEl = document.getElementById("menuStatsLoading");
   const wrapEl = document.getElementById("menuStatsTableWrap");
@@ -123,5 +100,4 @@ async function renderMenuStats() {
   wrapEl.classList.remove("hidden");
 }
 
-renderCafeteriaStats();
 renderMenuStats();
