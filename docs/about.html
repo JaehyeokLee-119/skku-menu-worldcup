@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>설명 - 성균관대 메뉴 월드컵</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="index.html" class="brand">성균관대 메뉴 월드컵</a>
+  <div class="topnav-links">
+    <a href="index.html">월드컵</a>
+    <a href="stats.html">통계</a>
+    <a href="about.html" class="active">설명</a>
+  </div>
+</nav>
+<div id="app" class="about-app">
+
+  <section class="about-section">
+    <h2 class="about-heading">문제정의</h2>
+    <p class="about-text">
+      교내 식당은 메뉴 별로 맛 편차가 심해서, 매 끼니 메뉴 선택에 두려움을 겪고 있다.
+      하지만 많은 사람들이 이용함에도 불구하고 리뷰나 데이터가 없어 곤란하다.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2 class="about-heading">페르소나</h2>
+    <div class="persona-card">
+      <div class="persona-tags">
+        <span class="persona-tag">남</span>
+        <span class="persona-tag">21세</span>
+        <span class="persona-tag">성균관대 2학년</span>
+      </div>
+      <p class="about-text">
+        얼마 안 되는 용돈으로 끼니를 때우는 기숙사생.<br>
+        교내 식당 이용 경험이 많다.
+      </p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2 class="about-heading">시나리오</h2>
+
+    <div class="scenario-block">
+      <div class="scenario-label">평소 (심심할 때)</div>
+      <ol class="scenario-flow">
+        <li>"이런 게 있구나, 월드컵 한번 해봐야지"</li>
+        <li>월드컵 진행</li>
+        <li>"역시 이 메뉴는 인기가 없네" 또는 "아 이런 메뉴가 인기가 많구나, 다음에 이거 나오면 먹어봐야지"</li>
+        <li class="scenario-arrow">↓</li>
+        <li class="scenario-loop">다음번에 재이용</li>
+      </ol>
+    </div>
+
+    <div class="scenario-block">
+      <div class="scenario-label">식사 전</div>
+      <ol class="scenario-flow">
+        <li>"오늘은 뭘 먹지" → 서비스에서 티어표 확인</li>
+      </ol>
+      <div class="scenario-cases">
+        <div class="scenario-case">
+          <div class="case-num">케이스 1</div>
+          <p>"아 오늘 메뉴들은 티어가 낮네." 좀 귀찮더라도 교외 식당을 먹으러 간다.</p>
+        </div>
+        <div class="scenario-case">
+          <div class="case-num">케이스 2</div>
+          <p>"오, 오늘 이게 나오는구나." 오늘은 이거 먹으러 가야겠다고 결정한다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<style>
+  .about-app { align-items: stretch; max-width: 640px; }
+  .about-section { margin-bottom: 40px; }
+  .about-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .about-text { line-height: 1.7; color: var(--ink); margin: 0; }
+
+  .persona-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 18px 20px;
+  }
+  .persona-tags { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .persona-tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .scenario-block {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .scenario-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--sub);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+  }
+  .scenario-flow { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .scenario-flow li {
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+  }
+  .scenario-flow li:not(.scenario-arrow):not(.scenario-loop)::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .scenario-arrow { text-align: center; color: var(--sub); padding-left: 0 !important; }
+  .scenario-arrow::before { content: none !important; }
+  .scenario-loop {
+    text-align: center;
+    padding-left: 0 !important;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .scenario-loop::before { content: none !important; }
+
+  .scenario-cases {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .scenario-case {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .case-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .scenario-case p { margin: 0; line-height: 1.6; font-size: 0.92rem; }
+</style>
+</body>
+</html>
