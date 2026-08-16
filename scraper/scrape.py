@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.skku.edu/skku/campus/support/welfare_11.do"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-CATEGORIES = ["B", "L", "D", "S"]  # 조식/중식/석식/간식
+CATEGORIES = ["L", "D", "B", "S"]  # 중식/석식/조식/간식 순으로 우선 수집
 TARGET_DISTINCT = 32
 MAX_WEEKS_BACK = 60  # safety cap (~14 months)
 
