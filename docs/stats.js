@@ -1,3 +1,6 @@
+// 현재는 캠퍼스별 1개 식당만 통계에 노출 (자연캠 행단골식당 / 인사캠 은행골식당)
+const ACTIVE_CAFETERIAS = ["행단골식당", "은행골식당"];
+
 const TIER_THRESHOLDS = [
   { tier: "S", min: 0.70 },
   { tier: "A", min: 0.60 },
@@ -54,7 +57,9 @@ async function renderCafeteriaStats() {
     return;
   }
 
-  bodyEl.innerHTML = withRate(rows)
+  const filtered = rows.filter(r => ACTIVE_CAFETERIAS.includes(r.cafeteria));
+
+  bodyEl.innerHTML = withRate(filtered)
     .map(r => tierRow({ name: r.cafeteria, wins: r.wins, losses: r.losses, winRate: r.winRate }))
     .join("");
 
@@ -82,7 +87,7 @@ async function renderMenuStats() {
   }
 
   const statsById = new Map(statRows.map(s => [s.id, s]));
-  const cafeterias = [...new Set(menus.map(m => m.cafeteria))];
+  const cafeterias = ACTIVE_CAFETERIAS.filter(c => menus.some(m => m.cafeteria === c));
 
   selectEl.innerHTML = cafeterias.map(c => `<option value="${c}">${c}</option>`).join("");
 
