@@ -141,7 +141,7 @@ function fillCard(cardEl, entry) {
     <div class="cafeteria-tag">${entry.cafeteria} · ${entry.meal_label}</div>
     ${entry.corner ? `<div class="corner-tag">${entry.corner}</div>` : ""}
     <div class="main-item">${entry.main_item}</div>
-    <div class="side-items">${entry.side_items.join(" · ")}</div>
+    ${entry.side_items.length ? `<div class="side-items">${entry.side_items.join(" · ")}</div>` : ""}
     <div class="price">${entry.price ? entry.price + "원" : ""}</div>
   `;
 }

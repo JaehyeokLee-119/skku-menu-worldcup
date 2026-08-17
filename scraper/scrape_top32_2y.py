@@ -25,6 +25,25 @@ def dedupe_combo_name(main_item):
         return name, str(int(round(float(price) * 1000)))
     return main_item, None
 
+
+# Fixed corners (e.g. "가츠엔"/"피키피커스") list weekday-by-weekday variants or
+# operational notices instead of actual side dishes, e.g. "[화] 치즈돈가스(6.5)",
+# "화, 목요일은 기존 메뉴 대신 ...", "(방학 기간 팝업델리는 ...)". These aren't
+# real 반찬 - drop them so only genuine side-dish names remain.
+def is_noise_side_item(text):
+    t = text.strip()
+    if t.startswith("[") or t.startswith("/"):
+        return True
+    if "코너에서" in t or "트렌드미식회" in t or "요일은" in t:
+        return True
+    if re.search(r"\(\d+\.\d+\)", t):
+        return True
+    return False
+
+
+def clean_side_items(side_items):
+    return [s for s in side_items if not is_noise_side_item(s)]
+
 WEEKS_BACK = 104  # ~2 years
 TOP_N = 32
 
@@ -59,6 +78,8 @@ def collect_history(campus, cafeteria, conspace, res_id):
             if cleaned != e["main_item"]:
                 e["main_item"] = cleaned
                 e["price"] = ""  # dropped price info is ambiguous once split, leave blank
+            e["side_items"] = clean_side_items(e["side_items"])
+            e["all_items"] = [e["main_item"]] + e["side_items"]
         all_entries.extend(entries)
 
         weeks_tried += 1

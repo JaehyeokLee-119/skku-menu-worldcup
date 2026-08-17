@@ -5,3 +5,6 @@ __pycache__/
 scraper/haeorm_image_manifest.json
 
 .vercel
+scraper/*_top50.json
+scraper/*_log.txt
+scraper/rank_*.py
