@@ -3,18 +3,34 @@ only the 32 most FREQUENTLY recurring menu names per cafeteria (popularity by
 repeat appearance), instead of merely the 32 most recent distinct menus.
 """
 import json
+import re
 import time
 import datetime
 from collections import Counter
 import requests
 from scrape import fetch_week, parse_week
 
+# Some corners show two size/price variants glued into one line, e.g.
+# "등심돈가스(5.5)/점보돈가스(7.5)" or "자장면(5.0) / 계란볶음밥*자장소스(5.5)".
+# These are two different dishes, not one - keep only the first as the
+# representative dish for that corner instead of a mashed-together name.
+COMBO_PATTERN = re.compile(r"^(.+?)\(([0-9.]+)\)\s*/\s*(.+?)\([0-9.]+\)$")
+
+
+def dedupe_combo_name(main_item):
+    """Returns (cleaned_name, price_in_won_or_None)."""
+    m = COMBO_PATTERN.match(main_item.strip())
+    if m:
+        name, price = m.group(1).strip(), m.group(2)
+        return name, str(int(round(float(price) * 1000)))
+    return main_item, None
+
 WEEKS_BACK = 104  # ~2 years
 TOP_N = 32
 
 TARGETS = [
-    ("자연과학캠퍼스", "행단골식당", "20201104", "3"),
-    ("인문사회과학캠퍼스", "은행골식당", "10201031", "2"),
+    ("자연과학캠퍼스", "행단골식당 (자과캠 학생회관 1층)", "20201104", "3"),
+    ("인문사회과학캠퍼스", "은행골식당 (인사캠 600주년기념관 지하1층)", "10201031", "2"),
 ]
 
 
@@ -38,6 +54,11 @@ def collect_history(campus, cafeteria, conspace, res_id):
             break
 
         entries, prev_date = parse_week(html, campus, cafeteria, "L", conspace)
+        for e in entries:
+            cleaned, _price = dedupe_combo_name(e["main_item"])
+            if cleaned != e["main_item"]:
+                e["main_item"] = cleaned
+                e["price"] = ""  # dropped price info is ambiguous once split, leave blank
         all_entries.extend(entries)
 
         weeks_tried += 1

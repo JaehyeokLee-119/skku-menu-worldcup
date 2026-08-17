@@ -3870,7 +3870,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 피키피커스 코너",
     "meal_type": "L",
@@ -3901,7 +3901,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 가츠엔 코너",
     "meal_type": "L",
@@ -3909,7 +3909,7 @@
     "weekday": "월",
     "mmdd": "08.17",
     "price": "",
-    "main_item": "등심돈가스(5.5)/점보돈가스(7.5)",
+    "main_item": "등심돈가스",
     "side_items": [
       "[화] 치즈돈가스(6.5)",
       "[수] 카레돈가스(6.5)",
@@ -3926,7 +3926,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 싱푸차이나 코너",
     "meal_type": "L",
@@ -3934,7 +3934,7 @@
     "weekday": "월",
     "mmdd": "06.15",
     "price": "",
-    "main_item": "자장면(5.0) / 계란볶음밥*자장소스(5.5)",
+    "main_item": "자장면",
     "side_items": [
       "/ 짬뽕(5.0) / 부대짬뽕(6.5) / 나가사키짬뽕(6.5)",
       "/ 탕수육(3.0) / 군만두(2pcs, 1.0) / 공깃밥(1.0)",
@@ -3949,7 +3949,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -3974,7 +3974,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -3999,7 +3999,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4024,7 +4024,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4049,7 +4049,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4074,7 +4074,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4101,7 +4101,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4126,7 +4126,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4151,7 +4151,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4176,7 +4176,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4201,7 +4201,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "2F 나폴리폴리 코너",
     "meal_type": "L",
@@ -4224,7 +4224,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4249,7 +4249,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4274,7 +4274,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4299,7 +4299,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4322,7 +4322,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4347,7 +4347,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "2F 나폴리폴리 코너",
     "meal_type": "L",
@@ -4368,7 +4368,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4393,7 +4393,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4418,7 +4418,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4443,7 +4443,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4466,7 +4466,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4491,7 +4491,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4516,7 +4516,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4541,7 +4541,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4566,7 +4566,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4591,7 +4591,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4616,7 +4616,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4639,7 +4639,7 @@
   },
   {
     "campus": "자연과학캠퍼스",
-    "cafeteria": "행단골식당",
+    "cafeteria": "행단골식당 (자과캠 학생회관 1층)",
     "conspace_cd": "20201104",
     "corner": "1F 봄이온소반 코너",
     "meal_type": "L",
@@ -4664,7 +4664,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4680,7 +4680,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4696,7 +4696,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "싱푸차이나 코너",
     "meal_type": "L",
@@ -4712,7 +4712,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4728,7 +4728,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4744,7 +4744,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4760,7 +4760,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4776,7 +4776,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4792,7 +4792,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4808,7 +4808,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4824,7 +4824,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "싱푸차이나 코너",
     "meal_type": "L",
@@ -4840,7 +4840,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4856,7 +4856,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4872,7 +4872,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "싱푸차이나 코너",
     "meal_type": "L",
@@ -4888,7 +4888,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4904,7 +4904,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4920,7 +4920,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4936,7 +4936,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "가츠엔 코너",
     "meal_type": "L",
@@ -4952,7 +4952,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -4968,7 +4968,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "가츠엔 코너",
     "meal_type": "L",
@@ -4984,7 +4984,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5000,7 +5000,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5016,7 +5016,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "싱푸차이나 코너",
     "meal_type": "L",
@@ -5032,7 +5032,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5048,7 +5048,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5064,7 +5064,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "싱푸차이나 코너",
     "meal_type": "L",
@@ -5080,7 +5080,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5096,7 +5096,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5112,7 +5112,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "팝업델리 코너",
     "meal_type": "L",
@@ -5133,7 +5133,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "싱푸차이나 코너",
     "meal_type": "L",
@@ -5149,7 +5149,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",
@@ -5165,7 +5165,7 @@
   },
   {
     "campus": "인문사회과학캠퍼스",
-    "cafeteria": "은행골식당",
+    "cafeteria": "은행골식당 (인사캠 600주년기념관 지하1층)",
     "conspace_cd": "10201031",
     "corner": "봄이온 소반 코너",
     "meal_type": "L",

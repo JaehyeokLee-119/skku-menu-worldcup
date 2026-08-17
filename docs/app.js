@@ -27,7 +27,7 @@ const el = {
 let selectedSize = null;
 
 // 현재는 캠퍼스별 1개 식당만 제공 (자연캠 행단골식당 / 인사캠 은행골식당)
-const ACTIVE_CAFETERIAS = ["행단골식당", "은행골식당"];
+const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
 
 async function init() {
   const res = await fetch("data/menus.json");

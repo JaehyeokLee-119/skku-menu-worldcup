@@ -1,5 +1,5 @@
 // 현재는 캠퍼스별 1개 식당만 통계에 노출 (자연캠 행단골식당 / 인사캠 은행골식당)
-const ACTIVE_CAFETERIAS = ["행단골식당", "은행골식당"];
+const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
 
 const TIER_THRESHOLDS = [
   { tier: "S", min: 0.70 },
