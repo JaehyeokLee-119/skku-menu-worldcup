@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 예시사진/
 scraper/haeorm_image_manifest.json
+
+.vercel
