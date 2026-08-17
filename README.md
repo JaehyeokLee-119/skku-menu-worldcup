@@ -38,3 +38,4 @@ python -m http.server 8790
 ## 배포
 
 GitHub Pages로 배포되어 있다 (Settings → Pages → Deploy from branch: main /docs). `docs/` 외 다른 정적 호스팅에 올릴 때는 그 폴더 전체(index.html, style.css, app.js, data/menus.json)만 복사하면 된다. 서버 로직 없음.
+
