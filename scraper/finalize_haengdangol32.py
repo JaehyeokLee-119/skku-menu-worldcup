@@ -10,6 +10,7 @@ DROP_NAMES = {
     "모둠햄부대찌개&라면사리",  # dup of 모둠햄부대찌개
     "순살시래기감자탕",       # dup of 시래기순살감자탕 (word order only)
     "김치날치알밥",          # dup of 김치날치알비빔밥
+    "셀프라면",              # 코너 컨셉(샐러드바+라면)이지 단일 메뉴가 아니라서 제외
 }
 
 candidates = json.load(open("scraper/haengdangol_top50.json", encoding="utf-8"))

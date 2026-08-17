@@ -30,7 +30,7 @@ let selectedSize = null;
 const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
 
 async function init() {
-  const res = await fetch("data/menus.json");
+  const res = await fetch("data/menus.json", { cache: "no-store" });
   const all = (await res.json()).map((e, i) => ({ ...e, id: i }));
   state.data = all.filter(e => ACTIVE_CAFETERIAS.includes(e.cafeteria));
   buildCafeteriaOptions();

@@ -251,7 +251,6 @@ select {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-height: 320px;
 }
 
 .card:hover, .card:active {
@@ -308,7 +307,6 @@ select {
 }
 
 .card .price {
-  margin-top: auto;
   font-size: 0.85rem;
   color: var(--sub);
   font-weight: 600;

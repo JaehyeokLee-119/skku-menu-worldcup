@@ -53,7 +53,7 @@ async function renderMenuStats() {
   let menus, statRows;
   try {
     const [menusRes, stats] = await Promise.all([
-      fetch("data/menus.json").then(r => r.json()),
+      fetch("data/menus.json", { cache: "no-store" }).then(r => r.json()),
       fetchMenuStats(),
     ]);
     menus = menusRes;
