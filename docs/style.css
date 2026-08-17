@@ -144,6 +144,9 @@ h1 {
 h2 { text-align: center; }
 
 .sub { color: var(--sub); margin-bottom: 28px; }
+.sub + .sub-note { margin-top: -24px; }
+
+.sub-note { color: var(--sub); font-size: 0.82rem; margin: 0 0 28px; }
 
 .select-group {
   width: 100%;
