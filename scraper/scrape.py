@@ -31,6 +31,24 @@ CAFETERIAS = [
 MEAL_LABEL = {"B": "조식", "L": "중식", "D": "석식", "S": "간식"}
 
 
+def is_noise_line(text):
+    """True if a line is an operational notice / corner label, not a real dish."""
+    t = text.strip()
+    if not t:
+        return True
+    if "미운영" in t or "휴무" in t:
+        return True
+    if t.startswith("[") and t.endswith("]"):
+        return True
+    if "★" in t:
+        return True
+    if "공사" in t:
+        return True
+    if "open" in t.lower():
+        return True
+    return False
+
+
 def fetch_week(conspace, res_id, category, dt):
     params = {
         "mode": "info",
@@ -69,8 +87,9 @@ def parse_week(html, campus, cafeteria, category, conspace):
             if not pre:
                 continue
             items = [x.strip() for x in pre.get_text("\n").split("\n") if x.strip()]
-            # drop closure/placeholder lines like "미운영" or "한상차림 미운영"
-            items = [x for x in items if "미운영" not in x]
+            # drop closure/placeholder/announcement lines, not real dishes:
+            # "미운영", "한상차림 미운영", "[코너 이름표]", "★ OPEN 공지 ★", 공사 안내 등
+            items = [x for x in items if not is_noise_line(x)]
             if not items:
                 continue
 
