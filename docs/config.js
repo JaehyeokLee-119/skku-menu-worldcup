@@ -84,6 +84,22 @@ async function recordChampionship(winner) {
   }
 }
 
+async function recordWorldcupProgress(version, eventType, bracketSize) {
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/rpc/record_worldcup_progress`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      },
+      body: JSON.stringify({ p_version: version, p_event_type: eventType, p_bracket_size: bracketSize }),
+    });
+  } catch (err) {
+    console.warn("worldcup progress record failed", err);
+  }
+}
+
 async function fetchCafeteriaStats() {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/cafeteria_stats?select=*`, {
     headers: {

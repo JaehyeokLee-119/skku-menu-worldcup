@@ -102,6 +102,8 @@ function startGame() {
   state.startedCafeteria = val;
   state.startedSize = selectedSize;
 
+  recordWorldcupProgress("v2", "start", selectedSize);
+
   if (typeof gtag === "function") {
     gtag("event", "worldcup_start", {
       cafeteria: val,
@@ -179,6 +181,8 @@ function showResult(winner) {
   el.screenGame.classList.add("hidden");
   el.screenResult.classList.remove("hidden");
   fillCard(el.winnerCard, winner);
+
+  recordWorldcupProgress("v2", "complete", state.startedSize);
 
   if (typeof gtag === "function") {
     gtag("event", "worldcup_complete", {

@@ -121,3 +121,49 @@ $$ language plpgsql security definer;
 
 grant execute on function record_bracket_start(text[], text[], text[]) to anon;
 grant execute on function record_championship(text, text, text) to anon;
+
+-- 배포 버전(latest/v2/v1)별로 "시작" 대비 "끝까지 완주" 비율을 비교하기 위한 이벤트 로그.
+-- 한 번의 월드컵 플레이마다 시작 시 1행(event_type='start'), 완주 시 1행(event_type='complete')이 쌓인다.
+create table worldcup_progress (
+  id bigint generated always as identity primary key,
+  version text not null,
+  event_type text not null check (event_type in ('start', 'complete')),
+  bracket_size integer not null,
+  created_at timestamptz not null default now()
+);
+
+alter table worldcup_progress enable row level security;
+
+-- anon은 쓰기만 가능 (개별 행 조회는 불가, 집계는 아래 RPC로만 가능)
+create policy "anon can insert progress"
+  on worldcup_progress for insert
+  to anon
+  with check (true);
+
+create or replace function record_worldcup_progress(p_version text, p_event_type text, p_bracket_size integer)
+returns void as $$
+begin
+  insert into worldcup_progress (version, event_type, bracket_size)
+  values (p_version, p_event_type, p_bracket_size);
+end;
+$$ language plpgsql security definer;
+
+grant execute on function record_worldcup_progress(text, text, integer) to anon;
+
+-- version별/규모별 시작·완주 건수 집계. 완주율 = complete_count / start_count.
+create or replace function get_worldcup_completion_stats()
+returns table (version text, bracket_size integer, start_count bigint, complete_count bigint) as $$
+  select
+    coalesce(s.version, c.version) as version,
+    coalesce(s.bracket_size, c.bracket_size) as bracket_size,
+    coalesce(s.cnt, 0) as start_count,
+    coalesce(c.cnt, 0) as complete_count
+  from
+    (select version, bracket_size, count(*) as cnt from worldcup_progress where event_type = 'start' group by version, bracket_size) s
+    full outer join
+    (select version, bracket_size, count(*) as cnt from worldcup_progress where event_type = 'complete' group by version, bracket_size) c
+    on s.version = c.version and s.bracket_size = c.bracket_size
+  order by version, bracket_size;
+$$ language sql security definer;
+
+grant execute on function get_worldcup_completion_stats() to anon;
