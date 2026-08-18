@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="KOrDOfrEUN9D3AdqTjw1bRF7JTJ5dpxACf7tST6a6Lo" />
+<title>식당 통계 - 성균관대 메뉴 월드컵</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJEPT5KRBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GJEPT5KRBJ');
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="index.html" class="brand">성균관대 메뉴 월드컵</a>
+  <div class="topnav-links">
+    <a href="index.html">월드컵</a>
+    <a href="stats.html" class="active">통계</a>
+  </div>
+</nav>
+<div id="app" class="stats-app">
+  <h1 class="stats-title">식당별 메뉴 티어표</h1>
+  <div class="select-group menu-cafeteria-select">
+    <label>식당 선택</label>
+    <select id="menuCafeteriaSelect"></select>
+  </div>
+  <p id="menuStatsLoading" class="data-info">불러오는 중...</p>
+  <div id="menuStatsTableWrap" class="stats-table-wrap hidden">
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th>티어</th>
+          <th>메뉴</th>
+          <th>승</th>
+          <th>패</th>
+          <th>승률</th>
+        </tr>
+      </thead>
+      <tbody id="menuStatsBody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="stats.js"></script>
+</body>
+</html>

@@ -8,3 +8,5 @@ scraper/haeorm_image_manifest.json
 scraper/*_top50.json
 scraper/*_log.txt
 scraper/rank_*.py
+scraper/image_manifest.json
+/*.jpg
