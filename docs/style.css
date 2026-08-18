@@ -432,6 +432,13 @@ select {
   font-size: 0.9rem;
 }
 
+.image-disclaimer {
+  margin: 18px 0 0;
+  color: var(--sub);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
 .result-wrap {
   display: flex;
   align-items: flex-start;
@@ -506,18 +513,57 @@ select {
 }
 
 .feedback-btn {
-  padding: 6px 14px;
+  width: 56px;
+  padding: 6px 0;
   border-radius: 999px;
   border: 1px solid var(--card-border);
   background: var(--card-bg);
   color: var(--ink);
   cursor: pointer;
   font-size: 0.82rem;
+  text-align: center;
 }
 
 .feedback-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.feedback-btn[data-answer="yes"] {
+  background: #d4e8fb;
+  border-color: #b8d9f7;
+  color: #2c5f8a;
+}
+
+.feedback-btn[data-answer="yes"]:hover {
+  background: #c2ddf7;
+  border-color: #8fc0ec;
+  color: #1f4a6e;
+}
+
+.feedback-btn[data-answer="no"] {
+  background: #fbdada;
+  border-color: #f5bcbc;
+  color: #8a3a3a;
+}
+
+.feedback-btn[data-answer="no"]:hover {
+  background: #f7c4c4;
+  border-color: #ef9d9d;
+  color: #6e2b2b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .feedback-btn[data-answer="yes"] {
+    background: #2c4a63;
+    border-color: #3a6083;
+    color: #cfe6fb;
+  }
+  .feedback-btn[data-answer="no"] {
+    background: #5a3232;
+    border-color: #7a4444;
+    color: #fbd4d4;
+  }
 }
 
 .feedback-thanks {

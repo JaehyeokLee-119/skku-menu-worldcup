@@ -133,7 +133,7 @@ async function submitRankingFeedback(page, cafeteria, answer) {
 function renderFeedbackWidget(container, page, getCafeteria) {
   container.innerHTML = `
     <div class="feedback-widget">
-      <span class="feedback-question">이 랭킹이 좀 맞는 것 같나요?</span>
+      <span class="feedback-question">이 티어표가 좀 맞는 것 같나요?</span>
       <div class="feedback-buttons">
         <button class="feedback-btn" data-answer="yes">네</button>
         <button class="feedback-btn" data-answer="no">아뇨</button>
