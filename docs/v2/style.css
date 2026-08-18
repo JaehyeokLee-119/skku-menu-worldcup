@@ -209,82 +209,11 @@ select {
 
 .primary-btn:hover { filter: brightness(1.05); }
 
-.cafeteria-buttons {
-  display: flex;
-  gap: 14px;
-  width: 100%;
-  max-width: 420px;
-  margin-top: 8px;
-}
-
-.cafeteria-btn {
-  flex: 1;
-  position: relative;
-  aspect-ratio: 4 / 3;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid var(--card-border);
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  padding: 0;
-  background: var(--card-border);
-}
-
-.cafeteria-btn img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cafeteria-btn:hover {
-  transform: translateY(-2px);
-  transition: 120ms ease;
-}
-
-.cafeteria-btn:disabled {
-  cursor: default;
-  opacity: 0.7;
-}
-
-.cafeteria-btn:disabled:hover {
-  transform: none;
-}
-
-.cafeteria-btn:hover .cafeteria-btn-label {
-  background: var(--accent);
-}
-
-.cafeteria-btn-label {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 8px 6px;
-  background: rgba(20, 16, 12, 0.65);
-  color: #fff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.cafeteria-btn-name {
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.cafeteria-btn-location {
-  font-weight: 400;
-  font-size: 0.68rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .data-info { margin-top: 18px; color: var(--sub); font-size: 0.8rem; text-align: center; }
 
 .progress {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   max-width: 640px;
   color: var(--sub);
@@ -303,31 +232,6 @@ select {
 
 .vs {
   align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  flex-shrink: 0;
-}
-
-.vs-round {
-  font-weight: 700;
-  color: var(--accent);
-  font-size: 0.78rem;
-  white-space: nowrap;
-}
-
-.vs-round.pulse {
-  animation: roundPop 500ms ease;
-}
-
-@keyframes roundPop {
-  0% { transform: scale(0.6); opacity: 0; }
-  60% { transform: scale(1.15); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-.vs-label {
   font-weight: 800;
   color: var(--sub);
   font-size: 1rem;
@@ -355,29 +259,16 @@ select {
   transition: 120ms ease;
 }
 
-.card.shake {
-  border-color: var(--accent);
-  animation: cardShake 200ms ease;
-  pointer-events: none;
-}
-
-@keyframes cardShake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-3px); }
-}
-
 .card-image {
   width: 100%;
-  flex: 1;
-  min-height: 160px;
+  aspect-ratio: 4 / 3;
   border-radius: 10px;
   overflow: hidden;
   background: var(--card-border);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .card-image img {
@@ -419,7 +310,6 @@ select {
   font-size: 0.85rem;
   color: var(--sub);
   font-weight: 600;
-  text-align: right;
 }
 
 .text-btn {
@@ -442,28 +332,13 @@ select {
 
 .winner:hover { transform: none; border-color: var(--card-border); }
 
-@media (min-width: 640px) {
-  #app:not(.stats-app) { max-width: 1100px; }
-  .progress { max-width: 1000px; }
-  .vs-wrap { max-width: 1000px; }
-}
-
-@media (min-width: 1000px) {
-  #app:not(.stats-app) { max-width: 1400px; }
-  .progress { max-width: 1300px; }
-  .vs-wrap { max-width: 1300px; }
-}
-
 @media (max-width: 520px) {
   #app { padding-left: 12px; padding-right: 12px; }
 
   .vs-wrap { gap: 8px; }
-  .vs { flex-shrink: 0; }
-  .vs-round { font-size: 0.65rem; }
-  .vs-label { font-size: 0.75rem; }
+  .vs { font-size: 0.75rem; flex-shrink: 0; }
 
   .card { padding: 12px 10px; gap: 6px; min-height: unset; }
-  .card-image { min-height: 110px; }
   .card .cafeteria-tag, .card .corner-tag { font-size: 0.65rem; }
   .card .main-item { font-size: 0.95rem; line-height: 1.25; }
   .card .side-items { font-size: 0.7rem; line-height: 1.4; }

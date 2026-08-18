@@ -8,8 +8,9 @@ const state = {
 };
 
 const el = {
-  cafeteriaButtons: document.getElementById("cafeteriaButtons"),
+  cafeteriaSelect: document.getElementById("cafeteriaSelect"),
   sizeButtons: document.getElementById("sizeButtons"),
+  startBtn: document.getElementById("startBtn"),
   dataInfo: document.getElementById("dataInfo"),
   screenSelect: document.getElementById("screen-select"),
   screenGame: document.getElementById("screen-game"),
@@ -28,75 +29,34 @@ let selectedSize = null;
 // 현재는 캠퍼스별 1개 식당만 제공 (자연캠 행단골식당 / 인사캠 은행골식당)
 const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
 
-const CAFETERIA_INFO = {
-  "행단골식당 (자과캠 학생회관 1층)": { shortName: "행단골식당", image: "images/cafeterias/haengdangol.jpg" },
-  "은행골식당 (인사캠 600주년기념관 지하1층)": { shortName: "은행골식당", image: "images/cafeterias/eunhaenggol.jpg" },
-};
-
 async function init() {
   const res = await fetch("data/menus.json", { cache: "no-store" });
   const all = (await res.json()).map((e, i) => ({ ...e, id: i }));
   state.data = all.filter(e => ACTIVE_CAFETERIAS.includes(e.cafeteria));
-  buildCafeteriaButtons();
+  buildCafeteriaOptions();
   updateSizeButtons();
   el.dataInfo.textContent = `총 ${state.data.length}개 메뉴 수집됨 (식당 ${new Set(state.data.map(d => d.cafeteria)).size}곳)`;
 }
 
-function buildCafeteriaButtons() {
+function buildCafeteriaOptions() {
   const names = [...new Set(state.data.map(d => d.cafeteria))];
-  el.cafeteriaButtons.innerHTML = "";
+  el.cafeteriaSelect.innerHTML = "";
   for (const name of names) {
-    const info = CAFETERIA_INFO[name] || { shortName: name, image: "" };
-    const location = name.match(/\(([^)]+)\)/)?.[1] || "";
-    const btn = document.createElement("button");
-    btn.className = "cafeteria-btn";
-    btn.innerHTML = `
-      <img src="${info.image}" alt="${info.shortName}">
-      <span class="cafeteria-btn-label">
-        <span class="cafeteria-btn-name">${info.shortName}</span>
-        ${location ? `<span class="cafeteria-btn-location">${location}</span>` : ""}
-      </span>
-    `;
-    btn.addEventListener("click", () => onCafeteriaClick(name, btn));
-    el.cafeteriaButtons.appendChild(btn);
+    const opt = document.createElement("option");
+    opt.value = name;
+    opt.textContent = name;
+    el.cafeteriaSelect.appendChild(opt);
   }
+  el.cafeteriaSelect.addEventListener("change", updateSizeButtons);
 }
 
-function preloadImage(src) {
-  return new Promise(resolve => {
-    const img = new Image();
-    img.onload = resolve;
-    img.onerror = resolve;
-    img.src = src;
-  });
-}
-
-function preloadCafeteriaImages(cafeteria) {
-  const pool = state.data.filter(d => d.cafeteria === cafeteria);
-  return Promise.all(pool.filter(e => e.image).map(e => preloadImage(e.image)));
-}
-
-async function onCafeteriaClick(name, btn) {
-  const buttons = [...el.cafeteriaButtons.children];
-  buttons.forEach(b => (b.disabled = true));
-  const labelEl = btn.querySelector(".cafeteria-btn-name");
-  const originalLabel = labelEl.textContent;
-  labelEl.textContent = "불러오는 중...";
-
-  await preloadCafeteriaImages(name);
-
-  labelEl.textContent = originalLabel;
-  buttons.forEach(b => (b.disabled = false));
-  startGame(name);
-}
-
-function commonPoolSize() {
-  const counts = ACTIVE_CAFETERIAS.map(c => state.data.filter(d => d.cafeteria === c).length);
-  return Math.min(...counts);
+function currentPoolSize() {
+  const val = el.cafeteriaSelect.value;
+  return state.data.filter(d => d.cafeteria === val).length;
 }
 
 function updateSizeButtons() {
-  const available = commonPoolSize();
+  const available = currentPoolSize();
   const options = [4, 8, 16, 32, 64];
   el.sizeButtons.innerHTML = "";
   let pickedDefault = null;
@@ -113,13 +73,9 @@ function updateSizeButtons() {
     });
     el.sizeButtons.appendChild(btn);
   }
-  // keep the user's previous choice if it's still valid for this cafeteria,
-  // only fall back to the largest available size otherwise
-  if (!selectedSize || selectedSize > available) {
-    selectedSize = pickedDefault;
-  }
-  if (selectedSize) {
-    [...el.sizeButtons.children].find(b => b.textContent === `${selectedSize}강`)?.classList.add("active");
+  selectedSize = pickedDefault;
+  if (pickedDefault) {
+    [...el.sizeButtons.children].find(b => b.textContent === `${pickedDefault}강`)?.classList.add("active");
   }
 }
 
@@ -132,8 +88,9 @@ function shuffle(arr) {
   return a;
 }
 
-function startGame(cafeteria) {
-  const pool = state.data.filter(d => d.cafeteria === cafeteria);
+function startGame() {
+  const val = el.cafeteriaSelect.value;
+  const pool = state.data.filter(d => d.cafeteria === val);
   if (!selectedSize || pool.length < selectedSize) {
     alert("선택한 규모만큼 메뉴가 충분하지 않습니다.");
     return;
@@ -162,11 +119,6 @@ function roundName(size) {
 function renderMatch() {
   const roundSize = state.bracket.length;
   el.roundLabel.textContent = roundName(roundSize);
-  if (state.matchIndex === 0) {
-    el.roundLabel.classList.remove("pulse");
-    void el.roundLabel.offsetWidth; // restart the animation
-    el.roundLabel.classList.add("pulse");
-  }
   const totalMatches = roundSize / 2;
   el.matchLabel.textContent = `${state.matchIndex + 1} / ${totalMatches}`;
 
@@ -174,18 +126,9 @@ function renderMatch() {
   const right = state.bracket[state.matchIndex * 2 + 1];
   fillCard(el.cardLeft, left);
   fillCard(el.cardRight, right);
-  el.cardLeft.classList.remove("shake");
-  el.cardRight.classList.remove("shake");
 
-  el.cardLeft.onclick = () => selectCard(el.cardLeft, left, right);
-  el.cardRight.onclick = () => selectCard(el.cardRight, right, left);
-}
-
-function selectCard(cardEl, winner, loser) {
-  el.cardLeft.onclick = null;
-  el.cardRight.onclick = null;
-  cardEl.classList.add("shake");
-  setTimeout(() => pick(winner, loser), 200);
+  el.cardLeft.onclick = () => pick(left, right);
+  el.cardRight.onclick = () => pick(right, left);
 }
 
 function fillCard(cardEl, entry) {
@@ -195,8 +138,10 @@ function fillCard(cardEl, entry) {
         ? `<img src="${entry.image}" alt="${entry.main_item}">`
         : `<div class="image-placeholder">🍽️</div>`}
     </div>
+    <div class="cafeteria-tag">${entry.cafeteria} · ${entry.meal_label}</div>
     ${entry.corner ? `<div class="corner-tag">${entry.corner}</div>` : ""}
     <div class="main-item">${entry.main_item}</div>
+    ${entry.side_items.length ? `<div class="side-items">${entry.side_items.join(" · ")}</div>` : ""}
     <div class="price">${entry.price ? entry.price + "원" : ""}</div>
   `;
 }
@@ -226,6 +171,7 @@ function showResult(winner) {
   fillCard(el.winnerCard, winner);
 }
 
+el.startBtn.addEventListener("click", startGame);
 el.backBtn.addEventListener("click", () => {
   el.screenGame.classList.add("hidden");
   el.screenSelect.classList.remove("hidden");

@@ -32,25 +32,27 @@
     <p class="sub-note">최근 2년동안 가장 많이 등장한 메뉴를 모았습니다</p>
 
     <div class="select-group">
+      <label>식당 선택</label>
+      <select id="cafeteriaSelect"></select>
+    </div>
+
+    <div class="select-group">
       <label>대진 규모</label>
       <div id="sizeButtons" class="size-buttons"></div>
     </div>
 
-    <div id="cafeteriaButtons" class="cafeteria-buttons"></div>
-
+    <button id="startBtn" class="primary-btn">시작하기</button>
     <p id="dataInfo" class="data-info"></p>
   </section>
 
   <section id="screen-game" class="screen hidden">
     <div class="progress">
+      <span id="roundLabel"></span>
       <span id="matchLabel"></span>
     </div>
     <div class="vs-wrap">
       <button class="card" id="cardLeft"></button>
-      <div class="vs">
-        <div class="vs-round" id="roundLabel"></div>
-        <div class="vs-label">VS</div>
-      </div>
+      <div class="vs">VS</div>
       <button class="card" id="cardRight"></button>
     </div>
     <button id="backBtn" class="text-btn">처음으로</button>
