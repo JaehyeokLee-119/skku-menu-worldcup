@@ -657,7 +657,7 @@ select {
       "button";
   }
   .winner-col { align-self: start; }
-  .winner .card-image { flex: 0 0 auto; height: 88px; min-height: 88px; }
+  .winner .card-image { flex: 0 0 auto; height: 140px; min-height: 140px; }
 
   .progress { max-width: 100%; }
 }
