@@ -34,6 +34,8 @@ async function renderMenuStats() {
   const bodyEl = document.getElementById("menuStatsBody");
   const selectEl = document.getElementById("menuCafeteriaSelect");
 
+  renderFeedbackWidget(document.getElementById("statsFeedback"), "stats", () => selectEl.value);
+
   let menus, statRows;
   try {
     const [menusRes, stats] = await Promise.all([

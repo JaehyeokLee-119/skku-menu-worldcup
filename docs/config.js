@@ -93,3 +93,60 @@ function tierFor(winRate) {
   }
   return "F";
 }
+
+// 브라우저에 저장되는 익명 식별자 - 동일인의 반복 응답을 구분하기 위한
+// 용도일 뿐, 개인정보는 아님 (로그인/이메일/기기정보 등을 담지 않음)
+function getClientId() {
+  const KEY = "skku_menu_client_id";
+  let id = localStorage.getItem(KEY);
+  if (!id) {
+    id = (crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`);
+    localStorage.setItem(KEY, id);
+  }
+  return id;
+}
+
+async function submitRankingFeedback(page, cafeteria, answer) {
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/ranking_feedback`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      },
+      body: JSON.stringify({
+        client_id: getClientId(),
+        page,
+        cafeteria: cafeteria || null,
+        answer,
+      }),
+    });
+  } catch (err) {
+    console.warn("feedback submit failed", err);
+  }
+}
+
+// container: 위젯을 그려넣을 빈 엘리먼트
+// page: 'result' | 'stats' (어느 화면에서 응답했는지)
+// getCafeteria: 클릭 시점에 호출해서 현재 보고 있는 식당 이름을 반환하는 함수
+function renderFeedbackWidget(container, page, getCafeteria) {
+  container.innerHTML = `
+    <div class="feedback-widget">
+      <span class="feedback-question">이 랭킹이 좀 맞는 것 같나요?</span>
+      <div class="feedback-buttons">
+        <button class="feedback-btn" data-answer="yes">네</button>
+        <button class="feedback-btn" data-answer="no">아뇨</button>
+      </div>
+    </div>
+  `;
+  const widget = container.querySelector(".feedback-widget");
+  widget.querySelectorAll(".feedback-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const answer = btn.dataset.answer;
+      const cafeteria = typeof getCafeteria === "function" ? getCafeteria() : getCafeteria;
+      widget.innerHTML = `<span class="feedback-thanks">감사합니다!</span>`;
+      submitRankingFeedback(page, cafeteria, answer);
+    });
+  });
+}

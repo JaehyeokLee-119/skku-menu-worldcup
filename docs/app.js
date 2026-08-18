@@ -22,6 +22,7 @@ const el = {
   winnerCard: document.getElementById("winnerCard"),
   winnerStatsBody: document.getElementById("winnerStatsBody"),
   winnerStatsTableBody: document.getElementById("winnerStatsTableBody"),
+  resultFeedback: document.getElementById("resultFeedback"),
   restartBtn: document.getElementById("restartBtn"),
 };
 
@@ -236,6 +237,7 @@ function showResult(winner) {
   el.screenResult.classList.remove("hidden");
   fillCard(el.winnerCard, winner);
   loadWinnerStats(winner);
+  renderFeedbackWidget(el.resultFeedback, "result", () => winner.cafeteria);
 
   if (typeof gtag === "function") {
     gtag("event", "worldcup_complete", {

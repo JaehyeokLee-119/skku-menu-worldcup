@@ -481,6 +481,51 @@ select {
   margin-bottom: 14px;
 }
 
+.feedback-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: var(--bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.feedback-question {
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.feedback-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.feedback-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.feedback-thanks {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .winner-stats-body { overflow-x: auto; }
 
 .winner-stats-body .stats-table th,

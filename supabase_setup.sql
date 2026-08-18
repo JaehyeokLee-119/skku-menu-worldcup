@@ -68,3 +68,22 @@ end;
 $$ language plpgsql security definer;
 
 grant execute on function record_menu_match(text, text, text, text, text, text) to anon;
+
+-- 랭킹(티어표) 신뢰도 피드백. client_id는 브라우저 localStorage에 저장된
+-- 익명 식별자로, 동일인의 반복 클릭을 구분하기 위한 용도 (개인정보 아님).
+create table ranking_feedback (
+  id bigint generated always as identity primary key,
+  client_id text not null,
+  page text not null,
+  cafeteria text,
+  answer text not null check (answer in ('yes', 'no')),
+  created_at timestamptz not null default now()
+);
+
+alter table ranking_feedback enable row level security;
+
+-- anon은 쓰기만 가능, 읽기는 불가 (관리자는 Supabase 대시보드에서 조회)
+create policy "anon can insert feedback"
+  on ranking_feedback for insert
+  to anon
+  with check (true);
