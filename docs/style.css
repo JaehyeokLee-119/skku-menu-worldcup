@@ -501,6 +501,31 @@ select {
   margin-bottom: 16px;
 }
 
+#screen-result { padding-bottom: 90px; }
+
+.result-feedback-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  background: var(--card-bg);
+  border-top: 1px solid var(--card-border);
+  box-shadow: 0 -6px 18px rgba(43, 38, 33, 0.08);
+  padding: 12px 20px;
+}
+
+.result-feedback-bar .feedback-widget {
+  width: 100%;
+  max-width: 780px;
+  margin-bottom: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
 .feedback-question {
   font-size: 0.85rem;
   color: var(--ink);

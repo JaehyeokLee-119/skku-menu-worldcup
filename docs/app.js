@@ -235,6 +235,7 @@ function pick(winner, loser) {
 function showResult(winner) {
   el.screenGame.classList.add("hidden");
   el.screenResult.classList.remove("hidden");
+  el.resultFeedback.classList.remove("hidden");
   fillCard(el.winnerCard, winner);
   loadWinnerStats(winner);
   renderFeedbackWidget(el.resultFeedback, "result", () => winner.cafeteria);
@@ -299,6 +300,7 @@ el.backBtn.addEventListener("click", () => {
 });
 el.restartBtn.addEventListener("click", () => {
   el.screenResult.classList.add("hidden");
+  el.resultFeedback.classList.add("hidden");
   el.screenSelect.classList.remove("hidden");
 });
 
