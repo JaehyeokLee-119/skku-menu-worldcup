@@ -87,3 +87,37 @@ create policy "anon can insert feedback"
   on ranking_feedback for insert
   to anon
   with check (true);
+
+-- 개별 매치 승패와 별개로, "최종 우승(챔피언)" 비율을 추적하기 위한 컬럼.
+-- appearances: 이 메뉴가 포함된 대진이 시작된 횟수
+-- championships: 그 대진에서 최종 우승한 횟수
+-- 우승률 = championships / appearances
+alter table menu_stats add column if not exists appearances integer not null default 0;
+alter table menu_stats add column if not exists championships integer not null default 0;
+
+-- 대진 시작 시 그 대진에 포함된 모든 메뉴의 appearances를 +1
+create or replace function record_bracket_start(menu_ids text[], menu_cafeterias text[], menu_names text[])
+returns void as $$
+declare
+  i int;
+begin
+  for i in 1..array_length(menu_ids, 1) loop
+    insert into menu_stats (id, cafeteria, main_item, appearances)
+    values (menu_ids[i], menu_cafeterias[i], menu_names[i], 1)
+    on conflict (id) do update set appearances = menu_stats.appearances + 1;
+  end loop;
+end;
+$$ language plpgsql security definer;
+
+-- 대진 완주 시 최종 우승 메뉴의 championships를 +1
+create or replace function record_championship(winner_id text, winner_cafeteria text, winner_main text)
+returns void as $$
+begin
+  insert into menu_stats (id, cafeteria, main_item, championships)
+  values (winner_id, winner_cafeteria, winner_main, 1)
+  on conflict (id) do update set championships = menu_stats.championships + 1;
+end;
+$$ language plpgsql security definer;
+
+grant execute on function record_bracket_start(text[], text[], text[]) to anon;
+grant execute on function record_championship(text, text, text) to anon;

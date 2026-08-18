@@ -148,6 +148,8 @@ function startGame(cafeteria) {
   state.startedCafeteria = cafeteria;
   state.startedSize = selectedSize;
 
+  recordBracketStart(state.bracket);
+
   if (typeof gtag === "function") {
     gtag("event", "worldcup_start", {
       cafeteria,
@@ -239,6 +241,7 @@ function showResult(winner) {
   fillCard(el.winnerCard, winner);
   loadWinnerStats(winner);
   renderFeedbackWidget(el.resultFeedback, "result", () => winner.cafeteria);
+  recordChampionship(winner);
 
   if (typeof gtag === "function") {
     gtag("event", "worldcup_complete", {

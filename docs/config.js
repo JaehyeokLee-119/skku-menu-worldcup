@@ -44,6 +44,46 @@ async function recordMatch(winner, loser) {
   }
 }
 
+async function recordBracketStart(bracket) {
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/rpc/record_bracket_start`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      },
+      body: JSON.stringify({
+        menu_ids: bracket.map(menuId),
+        menu_cafeterias: bracket.map(e => e.cafeteria),
+        menu_names: bracket.map(e => e.main_item),
+      }),
+    });
+  } catch (err) {
+    console.warn("bracket start record failed", err);
+  }
+}
+
+async function recordChampionship(winner) {
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/rpc/record_championship`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      },
+      body: JSON.stringify({
+        winner_id: menuId(winner),
+        winner_cafeteria: winner.cafeteria,
+        winner_main: winner.main_item,
+      }),
+    });
+  } catch (err) {
+    console.warn("championship record failed", err);
+  }
+}
+
 async function fetchCafeteriaStats() {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/cafeteria_stats?select=*`, {
     headers: {
