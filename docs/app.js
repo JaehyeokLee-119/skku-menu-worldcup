@@ -20,6 +20,8 @@ const el = {
   cardRight: document.getElementById("cardRight"),
   backBtn: document.getElementById("backBtn"),
   winnerCard: document.getElementById("winnerCard"),
+  winnerStatsBody: document.getElementById("winnerStatsBody"),
+  winnerStatsTableBody: document.getElementById("winnerStatsTableBody"),
   restartBtn: document.getElementById("restartBtn"),
 };
 
@@ -233,6 +235,7 @@ function showResult(winner) {
   el.screenGame.classList.add("hidden");
   el.screenResult.classList.remove("hidden");
   fillCard(el.winnerCard, winner);
+  loadWinnerStats(winner);
 
   if (typeof gtag === "function") {
     gtag("event", "worldcup_complete", {
@@ -240,6 +243,51 @@ function showResult(winner) {
       bracket_size: state.startedSize,
       winner: winner.main_item,
     });
+  }
+}
+
+async function loadWinnerStats(winner) {
+  el.winnerStatsTableBody.innerHTML = "";
+  const winnerId = menuId(winner);
+
+  try {
+    const [statRows] = await Promise.all([fetchMenuStats()]);
+    const statsById = new Map(statRows.map(s => [s.id, s]));
+
+    const seen = new Set();
+    const items = [];
+    for (const m of state.data) {
+      if (m.cafeteria !== winner.cafeteria) continue;
+      const id = menuId(m);
+      if (seen.has(id)) continue;
+      seen.add(id);
+      const s = statsById.get(id);
+      const wins = s ? s.wins : 0;
+      const losses = s ? s.losses : 0;
+      const winRate = (wins + losses) > 0 ? wins / (wins + losses) : null;
+      items.push({ id, name: m.main_item, winRate });
+    }
+    items.sort((a, b) => {
+      if (a.winRate === null && b.winRate === null) return 0;
+      if (a.winRate === null) return 1;
+      if (b.winRate === null) return -1;
+      return b.winRate - a.winRate;
+    });
+
+    el.winnerStatsTableBody.innerHTML = items.map(item => {
+      const tier = item.winRate === null ? "-" : tierFor(item.winRate);
+      const rateText = item.winRate === null ? "-" : `${(item.winRate * 100).toFixed(1)}%`;
+      const isWinner = item.id === winnerId;
+      return `
+        <tr class="${isWinner ? "winner-row" : ""}">
+          <td><span class="tier-badge tier-${tier}">${tier}</span></td>
+          <td>${item.name}</td>
+          <td>${rateText}</td>
+        </tr>
+      `;
+    }).join("");
+  } catch (err) {
+    el.winnerStatsBody.textContent = "통계를 불러오지 못했어요.";
   }
 }
 

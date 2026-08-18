@@ -65,3 +65,31 @@ async function fetchMenuStats() {
   if (!res.ok) throw new Error(`menu stats fetch failed: ${res.status}`);
   return res.json();
 }
+
+async function fetchMenuStatById(id) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/menu_stats?id=eq.${encodeURIComponent(id)}&select=*`, {
+    headers: {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+    },
+  });
+  if (!res.ok) throw new Error(`menu stat fetch failed: ${res.status}`);
+  const rows = await res.json();
+  return rows[0] || null;
+}
+
+const TIER_THRESHOLDS = [
+  { tier: "S", min: 0.70 },
+  { tier: "A", min: 0.60 },
+  { tier: "B", min: 0.50 },
+  { tier: "C", min: 0.40 },
+  { tier: "D", min: 0.30 },
+  { tier: "F", min: 0 },
+];
+
+function tierFor(winRate) {
+  for (const t of TIER_THRESHOLDS) {
+    if (winRate >= t.min) return t.tier;
+  }
+  return "F";
+}

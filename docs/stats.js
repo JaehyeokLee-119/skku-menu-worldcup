@@ -1,22 +1,6 @@
 // 현재는 캠퍼스별 1개 식당만 통계에 노출 (자연캠 행단골식당 / 인사캠 은행골식당)
 const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
 
-const TIER_THRESHOLDS = [
-  { tier: "S", min: 0.70 },
-  { tier: "A", min: 0.60 },
-  { tier: "B", min: 0.50 },
-  { tier: "C", min: 0.40 },
-  { tier: "D", min: 0.30 },
-  { tier: "F", min: 0 },
-];
-
-function tierFor(winRate) {
-  for (const t of TIER_THRESHOLDS) {
-    if (winRate >= t.min) return t.tier;
-  }
-  return "F";
-}
-
 function withRate(rows) {
   return rows.map(r => {
     const total = r.wins + r.losses;

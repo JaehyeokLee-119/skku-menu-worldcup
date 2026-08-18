@@ -58,8 +58,27 @@
 
   <section id="screen-result" class="screen hidden">
     <h2>우승 메뉴</h2>
-    <div class="card winner" id="winnerCard"></div>
-    <button id="restartBtn" class="primary-btn">다시 하기</button>
+    <div class="result-wrap">
+      <div class="winner-col">
+        <div class="card winner" id="winnerCard"></div>
+        <button id="restartBtn" class="primary-btn">다시 하기</button>
+      </div>
+      <div class="winner-stats" id="winnerStats">
+        <div class="winner-stats-title">식당 메뉴 티어표</div>
+        <div id="winnerStatsBody" class="winner-stats-body">
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>티어</th>
+                <th>메뉴</th>
+                <th>승률</th>
+              </tr>
+            </thead>
+            <tbody id="winnerStatsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </section>
 
 </div>
