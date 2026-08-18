@@ -57,9 +57,37 @@ function buildCafeteriaButtons() {
         ${location ? `<span class="cafeteria-btn-location">${location}</span>` : ""}
       </span>
     `;
-    btn.addEventListener("click", () => startGame(name));
+    btn.addEventListener("click", () => onCafeteriaClick(name, btn));
     el.cafeteriaButtons.appendChild(btn);
   }
+}
+
+function preloadImage(src) {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = resolve;
+    img.onerror = resolve;
+    img.src = src;
+  });
+}
+
+function preloadCafeteriaImages(cafeteria) {
+  const pool = state.data.filter(d => d.cafeteria === cafeteria);
+  return Promise.all(pool.filter(e => e.image).map(e => preloadImage(e.image)));
+}
+
+async function onCafeteriaClick(name, btn) {
+  const buttons = [...el.cafeteriaButtons.children];
+  buttons.forEach(b => (b.disabled = true));
+  const labelEl = btn.querySelector(".cafeteria-btn-name");
+  const originalLabel = labelEl.textContent;
+  labelEl.textContent = "불러오는 중...";
+
+  await preloadCafeteriaImages(name);
+
+  labelEl.textContent = originalLabel;
+  buttons.forEach(b => (b.disabled = false));
+  startGame(name);
 }
 
 function commonPoolSize() {

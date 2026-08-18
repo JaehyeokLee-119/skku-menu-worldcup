@@ -242,6 +242,15 @@ select {
   transition: 120ms ease;
 }
 
+.cafeteria-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.cafeteria-btn:disabled:hover {
+  transform: none;
+}
+
 .cafeteria-btn:hover .cafeteria-btn-label {
   background: var(--accent);
 }
