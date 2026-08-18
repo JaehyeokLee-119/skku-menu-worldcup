@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>성균관대 식당 메뉴 이상형 월드컵</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="index.html" class="brand">성균관대 메뉴 월드컵</a>
+  <div class="topnav-links">
+    <a href="index.html" class="active">월드컵</a>
+    <a href="stats.html">통계</a>
+  </div>
+</nav>
+<div id="app">
+
+  <section id="screen-select" class="screen">
+    <h1>성균관대 식당 메뉴<br>이상형 월드컵</h1>
+    <p class="sub">가장 먹고 싶은 메뉴를 골라주세요</p>
+
+    <div class="select-group">
+      <label>식당 선택</label>
+      <select id="cafeteriaSelect"></select>
+    </div>
+
+    <div class="select-group">
+      <label>대진 규모</label>
+      <div id="sizeButtons" class="size-buttons"></div>
+    </div>
+
+    <button id="startBtn" class="primary-btn">시작하기</button>
+    <p id="dataInfo" class="data-info"></p>
+  </section>
+
+  <section id="screen-game" class="screen hidden">
+    <div class="progress">
+      <span id="roundLabel"></span>
+      <span id="matchLabel"></span>
+    </div>
+    <div class="vs-wrap">
+      <button class="card" id="cardLeft"></button>
+      <div class="vs">VS</div>
+      <button class="card" id="cardRight"></button>
+    </div>
+    <button id="backBtn" class="text-btn">처음으로</button>
+  </section>
+
+  <section id="screen-result" class="screen hidden">
+    <h2>우승 메뉴</h2>
+    <div class="card winner" id="winnerCard"></div>
+    <button id="restartBtn" class="primary-btn">다시 하기</button>
+  </section>
+
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
