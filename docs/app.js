@@ -142,6 +142,15 @@ function startGame(cafeteria) {
   state.round = 1;
   state.matchIndex = 0;
   state.nextRound = [];
+  state.startedCafeteria = cafeteria;
+  state.startedSize = selectedSize;
+
+  if (typeof gtag === "function") {
+    gtag("event", "worldcup_start", {
+      cafeteria,
+      bracket_size: selectedSize,
+    });
+  }
 
   el.screenSelect.classList.add("hidden");
   el.screenResult.classList.add("hidden");
@@ -224,6 +233,14 @@ function showResult(winner) {
   el.screenGame.classList.add("hidden");
   el.screenResult.classList.remove("hidden");
   fillCard(el.winnerCard, winner);
+
+  if (typeof gtag === "function") {
+    gtag("event", "worldcup_complete", {
+      cafeteria: state.startedCafeteria,
+      bracket_size: state.startedSize,
+      winner: winner.main_item,
+    });
+  }
 }
 
 el.backBtn.addEventListener("click", () => {
