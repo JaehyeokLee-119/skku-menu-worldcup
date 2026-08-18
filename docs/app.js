@@ -154,6 +154,7 @@ function startGame(cafeteria) {
     gtag("event", "worldcup_start", {
       cafeteria,
       bracket_size: selectedSize,
+      version: "latest",
     });
   }
 
@@ -248,6 +249,7 @@ function showResult(winner) {
       cafeteria: state.startedCafeteria,
       bracket_size: state.startedSize,
       winner: winner.main_item,
+      version: "latest",
     });
   }
 }
