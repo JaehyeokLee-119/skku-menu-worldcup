@@ -443,13 +443,13 @@ select {
 .winner:hover { transform: none; border-color: var(--card-border); }
 
 @media (min-width: 640px) {
-  #app { max-width: 1100px; }
+  #app:not(.stats-app) { max-width: 1100px; }
   .progress { max-width: 1000px; }
   .vs-wrap { max-width: 1000px; }
 }
 
 @media (min-width: 1000px) {
-  #app { max-width: 1400px; }
+  #app:not(.stats-app) { max-width: 1400px; }
   .progress { max-width: 1300px; }
   .vs-wrap { max-width: 1300px; }
 }
