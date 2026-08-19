@@ -5,21 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="KOrDOfrEUN9D3AdqTjw1bRF7JTJ5dpxACf7tST6a6Lo" />
 <title>성균관대 식당 메뉴 이상형 월드컵</title>
-<!-- latest/v2 A/B 무작위 배정: 최초 방문 시 50/50으로 배정하고 localStorage에 고정해서
-     같은 사람이 재방문해도 같은 버전을 계속 보게 한다. -->
-<script>
-(function () {
-  var KEY = "skku_ab_version";
-  var v = localStorage.getItem(KEY);
-  if (!v) {
-    v = Math.random() < 0.5 ? "latest" : "v2";
-    localStorage.setItem(KEY, v);
-  }
-  if (v === "v2") {
-    location.replace("v2/");
-  }
-})();
-</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJEPT5KRBJ"></script>
 <script>
