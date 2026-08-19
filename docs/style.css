@@ -634,12 +634,12 @@ select {
 @media (max-width: 520px) {
   #app { padding-left: 12px; padding-right: 12px; }
 
-  .vs-wrap { gap: 8px; }
+  .vs-wrap { gap: 8px; flex: none; width: 100%; aspect-ratio: 9 / 16; }
   .vs { flex-shrink: 0; }
   .vs-round { font-size: 0.65rem; }
   .vs-label { font-size: 0.75rem; }
 
-  .card { padding: 0 0 10px; gap: 6px; min-height: unset; }
+  .card { padding: 0 0 10px; gap: 6px; min-height: 0; overflow-y: auto; }
   .card > *:not(.card-image) { margin-left: 10px; margin-right: 10px; }
   .card-image { min-height: 110px; }
   .card .cafeteria-tag, .card .corner-tag { font-size: 0.65rem; }
