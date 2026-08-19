@@ -737,7 +737,7 @@ select {
 
   .card { padding: 0 0 10px; gap: 6px; min-height: unset; }
   .card > *:not(.card-image) { margin-left: 10px; margin-right: 10px; }
-  .card-image { min-height: 110px; }
+  .card-image { min-height: 0; }
   .card .cafeteria-tag, .card .corner-tag { font-size: 0.65rem; }
   .card .main-item { font-size: 0.95rem; line-height: 1.25; }
   .card .side-items { font-size: 0.7rem; line-height: 1.4; }
@@ -759,4 +759,29 @@ select {
   .winner .card-image { flex: 0 0 auto; height: 140px; min-height: 140px; }
 
   .progress { max-width: 100%; }
+}
+
+/* 세로 배치(640px 미만)일 때, 두 메뉴 카드가 스크롤 없이 한 화면에 다 들어오도록
+   대결 화면(#screen-game이 보이는 동안)에서만 #app을 뷰포트 높이로 고정하고
+   카드/이미지를 flex로 남는 공간에 맞춰 줄인다. */
+@media (max-width: 639px) {
+  body:has(#screen-game:not(.hidden)) {
+    height: 100dvh;
+    overflow: hidden;
+  }
+  body:has(#screen-game:not(.hidden)) #app {
+    height: 100dvh;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+  }
+  body:has(#screen-game:not(.hidden)) .screen,
+  body:has(#screen-game:not(.hidden)) .vs-wrap,
+  body:has(#screen-game:not(.hidden)) .card {
+    min-height: 0;
+  }
+  body:has(#screen-game:not(.hidden)) .card-image {
+    flex: 1;
+    min-height: 0;
+  }
 }
