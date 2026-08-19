@@ -225,9 +225,11 @@ function fillCard(cardEl, entry) {
         ? `<img src="${entry.image}" alt="${entry.main_item}">`
         : `<div class="image-placeholder">🍽️</div>`}
     </div>
-    ${entry.corner ? `<div class="corner-tag">${entry.corner}</div>` : ""}
-    <div class="main-item">${entry.main_item}</div>
-    <div class="price">${entry.price ? entry.price + "원" : ""}</div>
+    <div class="card-meta">
+      ${entry.corner ? `<span class="corner-tag">${entry.corner}</span>` : ""}
+      <span class="main-item">${entry.main_item}</span>
+      ${entry.price ? `<span class="price">${entry.price}원</span>` : ""}
+    </div>
   `;
 }
 
