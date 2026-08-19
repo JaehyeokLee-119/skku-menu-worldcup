@@ -811,8 +811,9 @@ select {
     min-height: 0;
     padding-top: 16px;
     /* 기기의 제스처 바/홈 인디케이터 뒤로 콘텐츠가 가려지지 않도록
-       안전 영역만큼 여백을 더 확보 (안전 영역이 없는 기기는 그냥 16px) */
-    padding-bottom: max(16px, env(safe-area-inset-bottom, 0px));
+       넉넉하게 여유 공간을 확보 (카드가 남는 공간을 다 채우지 않고
+       이 여백만큼은 항상 비워두게 된다) */
+    padding-bottom: max(56px, env(safe-area-inset-bottom, 0px) + 40px);
     overflow: hidden;
   }
   body.game-active .screen,
