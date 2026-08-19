@@ -785,7 +785,10 @@ select {
    카드/이미지를 flex로 남는 공간에 맞춰 줄인다. */
 @media (max-width: 639px) {
   body:has(#screen-game:not(.hidden)) {
-    height: 100dvh;
+    /* dvh는 카카오톡 등 인앱 브라우저에서 실제 보이는 영역과 안 맞는 경우가
+       많아서, JS(app.js의 setAppVh)가 매긴 --app-vh를 우선 쓰고 dvh는
+       JS 실행 전 잠깐 동안의 fallback으로만 쓴다. */
+    height: var(--app-vh, 100dvh);
     overflow: hidden;
     display: flex;
     flex-direction: column;
