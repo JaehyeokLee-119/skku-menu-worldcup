@@ -1,0 +1,115 @@
+{
+  "_comment": "요일별로 고정 반복되는 메뉴(스크린샷 기반, 은행골식당/행단골식당). 요일 키(월~금) 안에 식당 짧은 이름을 키로 그 날의 메뉴 배열을 넣습니다.",
+  "days": {
+    "월": {
+      "은행골식당": [
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "청국장찌개", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "은행골김치찌개", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "불고기뚝배기&당면사리", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "삼계탕", "side_items": [], "price": "11000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치즈돈가스", "side_items": [], "price": "7000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치킨가라아게카레라이스", "side_items": [], "price": "6500" }
+      ],
+      "행단골식당": [
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "등심돈가스", "side_items": [], "price": "5500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "점보돈가스", "side_items": [], "price": "7500" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "셀프라면", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "구운닭가슴살샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "치킨텐더샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "베이컨포테이토샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "두부콩불고기샐러드", "side_items": [], "price": "" }
+      ]
+    },
+    "화": {
+      "은행골식당": [
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "춘천식닭갈비", "side_items": [], "price": "5500" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "은행골김치찌개", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "불고기뚝배기&당면사리", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "삼계탕", "side_items": [], "price": "11000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치즈돈가스", "side_items": [], "price": "7000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "도쿄함박스테이크", "side_items": [], "price": "10000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치킨가라아게카레라이스", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "싱푸차이나", "main_item": "초계국수", "side_items": [], "price": "8000" }
+      ],
+      "행단골식당": [
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "등심돈가스", "side_items": [], "price": "5500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "점보돈가스", "side_items": [], "price": "7500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치즈돈가스", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "셀프라면", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "구운닭가슴살샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "치킨텐더샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "베이컨포테이토샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "두부콩불고기샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "쇠고기미역국", "side_items": ["스모크햄구이&계란찜", "오이생채", "쌀밥", "배추김치"], "price": "5000" }
+      ]
+    },
+    "수": {
+      "은행골식당": [
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "열무보리비빔밥", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "은행골김치찌개", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "불고기뚝배기&당면사리", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "삼계탕", "side_items": [], "price": "11000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치즈돈가스", "side_items": [], "price": "7000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "도쿄함박스테이크", "side_items": [], "price": "10000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치킨가라아게카레라이스", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "싱푸차이나", "main_item": "초계국수", "side_items": [], "price": "8000" }
+      ],
+      "행단골식당": [
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "등심돈가스", "side_items": [], "price": "5500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "점보돈가스", "side_items": [], "price": "7500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "카레돈가스", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "셀프라면", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "구운닭가슴살샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "치킨텐더샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "베이컨포테이토샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "두부콩불고기샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "제육생야채비빔밥", "side_items": ["김말이튀김", "우동국", "배추김치"], "price": "5000" }
+      ]
+    },
+    "목": {
+      "은행골식당": [
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "소고기미역국", "side_items": [], "price": "4800" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "은행골김치찌개", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "뚝배기날치알밥", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "삼계탕", "side_items": [], "price": "11000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치즈돈가스", "side_items": [], "price": "7000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "도쿄함박스테이크", "side_items": [], "price": "10000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치킨가라아게카레라이스", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "싱푸차이나", "main_item": "초계국수", "side_items": [], "price": "8000" }
+      ],
+      "행단골식당": [
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "등심돈가스", "side_items": [], "price": "5500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "점보돈가스", "side_items": [], "price": "7500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "트렌드미식회 김호운의 봉골레파스타", "side_items": [], "price": "7500" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "셀프라면", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "구운닭가슴살샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "치킨텐더샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "베이컨포테이토샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "두부콩불고기샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "만두육개장", "side_items": ["오징어파전", "고추지무침", "쌀밥", "배추김치"], "price": "5000" }
+      ]
+    },
+    "금": {
+      "은행골식당": [
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "누룽지닭백숙", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "은행골김치찌개", "side_items": [], "price": "5000" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "전복반계탕", "side_items": [], "price": "11000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치즈돈가스", "side_items": [], "price": "7000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "도쿄함박스테이크", "side_items": [], "price": "10000" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "치킨가라아게카레라이스", "side_items": [], "price": "6500" },
+        { "meal_label": "중식", "corner": "싱푸차이나", "main_item": "초계국수", "side_items": [], "price": "8000" }
+      ],
+      "행단골식당": [
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "등심돈가스", "side_items": [], "price": "5500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "점보돈가스", "side_items": [], "price": "7500" },
+        { "meal_label": "중식", "corner": "가츠엔", "main_item": "피카츄&등심돈가스", "side_items": [], "price": "8000" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "셀프라면", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "구운닭가슴살샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "치킨텐더샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "베이컨포테이토샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "피키피커스", "main_item": "두부콩불고기샐러드", "side_items": [], "price": "" },
+        { "meal_label": "중식", "corner": "봄이온소반", "main_item": "김치날치알비빔밥", "side_items": ["미니냉모밀", "오징어링칠리", "미역줄기볶음", "깍두기"], "price": "5000" }
+      ]
+    }
+  }
+}
