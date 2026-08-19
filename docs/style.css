@@ -794,9 +794,13 @@ select {
     flex-direction: column;
   }
   /* topbar는 원래 크기 그대로, #app이 남은 공간을 전부 차지 (100dvh가 아님 -
-     그렇게 하면 topbar 높이만큼 아래로 흘러넘친다) */
+     그렇게 하면 topbar 높이만큼 아래로 흘러넘친다).
+     width:100%을 명시하지 않으면 topbar의 margin:0 auto가 flex 아이템
+     상태에서 "내용물 크기로 줄어들고 남는 공간을 마진이 흡수"하는 걸로
+     해석돼서 브랜드/메뉴 링크 사이 간격이 0으로 붙어버린다. */
   body:has(#screen-game:not(.hidden)) .topbar {
     flex: 0 0 auto;
+    width: 100%;
   }
   body:has(#screen-game:not(.hidden)) #app {
     flex: 1;
