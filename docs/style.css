@@ -799,7 +799,9 @@ select {
     flex: 1;
     min-height: 0;
     padding-top: 16px;
-    padding-bottom: 16px;
+    /* 기기의 제스처 바/홈 인디케이터 뒤로 콘텐츠가 가려지지 않도록
+       안전 영역만큼 여백을 더 확보 (안전 영역이 없는 기기는 그냥 16px) */
+    padding-bottom: max(16px, env(safe-area-inset-bottom, 0px));
     overflow: hidden;
   }
   body:has(#screen-game:not(.hidden)) .screen,
