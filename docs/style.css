@@ -713,11 +713,14 @@ select {
 @media (min-width: 640px) {
   #app:not(.stats-app) { max-width: 1100px; }
   .progress { max-width: 1000px; }
+  .vs-wrap { flex-direction: row; max-width: 1000px; }
+  .vs { flex-direction: column; gap: 4px; }
 }
 
 @media (min-width: 1000px) {
   #app:not(.stats-app) { max-width: 1400px; }
   .progress { max-width: 1300px; }
+  .vs-wrap { max-width: 1300px; }
 }
 
 @media (max-width: 520px) {

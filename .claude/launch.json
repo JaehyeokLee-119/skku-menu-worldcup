@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "skku-menu-worldcup",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["dev_server.py"],
+      "port": 8790
+    }
+  ]
+}
