@@ -43,6 +43,20 @@ async function init() {
   buildCafeteriaButtons();
   updateSizeButtons();
   el.dataInfo.textContent = `총 ${state.data.length}개 메뉴 수집됨 (식당 ${new Set(state.data.map(d => d.cafeteria)).size}곳)`;
+
+  preselectCafeteriaFromQuery();
+}
+
+// 오늘의 메뉴 화면의 "이 식당으로 월드컵 하기" 링크(?cafeteria=짧은이름)로 들어왔으면 바로 시작
+function preselectCafeteriaFromQuery() {
+  const shortName = new URLSearchParams(location.search).get("cafeteria");
+  if (!shortName) return;
+  const fullName = ACTIVE_CAFETERIAS.find(c => CAFETERIA_INFO[c]?.shortName === shortName);
+  if (!fullName) return;
+  const names = [...new Set(state.data.map(d => d.cafeteria))];
+  const idx = names.indexOf(fullName);
+  const btn = el.cafeteriaButtons.children[idx];
+  if (btn) onCafeteriaClick(fullName, btn);
 }
 
 function buildCafeteriaButtons() {

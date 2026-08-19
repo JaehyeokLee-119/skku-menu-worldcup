@@ -20,12 +20,19 @@
 <nav class="topbar">
   <a href="index.html" class="brand">성균관대 메뉴 월드컵</a>
   <div class="topnav-links">
-    <a href="index.html">월드컵</a>
+    <a href="index.html">오늘의 메뉴</a>
+    <a href="worldcup.html">월드컵</a>
     <a href="stats.html" class="active">통계</a>
   </div>
 </nav>
 <div id="app" class="stats-app">
-  <h1 class="stats-title">식당별 메뉴 티어표</h1>
+  <div class="stats-header">
+    <h1 class="stats-title">식당별 메뉴 티어표</h1>
+    <div id="statsCriteriaToggle" class="stats-criteria-toggle">
+      <button type="button" class="size-btn active" data-criteria="winrate">승률 기준</button>
+      <button type="button" class="size-btn" data-criteria="championship">우승횟수 기준</button>
+    </div>
+  </div>
   <div class="select-group menu-cafeteria-select">
     <label>식당 선택</label>
     <select id="menuCafeteriaSelect"></select>
@@ -38,9 +45,9 @@
         <tr>
           <th>티어</th>
           <th>메뉴</th>
-          <th>승</th>
-          <th>패</th>
-          <th>승률</th>
+          <th id="statColA">승</th>
+          <th id="statColB">패</th>
+          <th id="statColC">승률</th>
         </tr>
       </thead>
       <tbody id="menuStatsBody"></tbody>
