@@ -775,6 +775,10 @@ select {
       "button";
   }
   .winner-col { align-self: start; }
+  /* 데스크톱 2단 레이아웃 때 카드(420px)/티어표(380px)에 서로 다른
+     max-width를 줬던 게 1단으로 쌓이는 모바일에서도 그대로 남아 있어서
+     좌우 폭이 안 맞았다. 같은 폭으로 맞춘다. */
+  .winner, .winner-stats { max-width: 100%; }
   .winner .card-image { flex: 0 0 auto; height: 140px; min-height: 140px; }
 
   .progress { max-width: 100%; }
