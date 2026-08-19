@@ -167,3 +167,15 @@ returns table (version text, bracket_size integer, start_count bigint, complete_
 $$ language sql security definer;
 
 grant execute on function get_worldcup_completion_stats() to anon;
+
+-- 티어표 신뢰도 피드백("이 티어표가 좀 맞는 것 같나요?") 집계.
+-- ranking_feedback은 anon이 쓰기만 가능해서(원본 응답 보호), 페이지/식당/답변별 건수만 집계해서 보여준다.
+create or replace function get_ranking_feedback_stats()
+returns table (page text, cafeteria text, answer text, cnt bigint) as $$
+  select page, cafeteria, answer, count(*) as cnt
+  from ranking_feedback
+  group by page, cafeteria, answer
+  order by page, cafeteria, answer;
+$$ language sql security definer;
+
+grant execute on function get_ranking_feedback_stats() to anon;
