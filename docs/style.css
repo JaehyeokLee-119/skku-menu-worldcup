@@ -784,7 +784,7 @@ select {
    대결 화면(#screen-game이 보이는 동안)에서만 #app을 뷰포트 높이로 고정하고
    카드/이미지를 flex로 남는 공간에 맞춰 줄인다. */
 @media (max-width: 639px) {
-  body:has(#screen-game:not(.hidden)) {
+  body.game-active {
     /* dvh는 카카오톡 등 인앱 브라우저에서 실제 보이는 영역과 안 맞는 경우가
        많아서, JS(app.js의 setAppVh)가 매긴 --app-vh를 우선 쓰고 dvh는
        JS 실행 전 잠깐 동안의 fallback으로만 쓴다. */
@@ -798,11 +798,11 @@ select {
      width:100%을 명시하지 않으면 topbar의 margin:0 auto가 flex 아이템
      상태에서 "내용물 크기로 줄어들고 남는 공간을 마진이 흡수"하는 걸로
      해석돼서 브랜드/메뉴 링크 사이 간격이 0으로 붙어버린다. */
-  body:has(#screen-game:not(.hidden)) .topbar {
+  body.game-active .topbar {
     flex: 0 0 auto;
     width: 100%;
   }
-  body:has(#screen-game:not(.hidden)) #app {
+  body.game-active #app {
     flex: 1;
     min-height: 0;
     padding-top: 16px;
@@ -811,18 +811,18 @@ select {
     padding-bottom: max(16px, env(safe-area-inset-bottom, 0px));
     overflow: hidden;
   }
-  body:has(#screen-game:not(.hidden)) .screen,
-  body:has(#screen-game:not(.hidden)) .vs-wrap,
-  body:has(#screen-game:not(.hidden)) .card {
+  body.game-active .screen,
+  body.game-active .vs-wrap,
+  body.game-active .card {
     min-height: 0;
   }
-  body:has(#screen-game:not(.hidden)) .card-image {
+  body.game-active .card-image {
     flex: 1;
     min-height: 0;
   }
   /* 안내 문구를 한 줄로 줄여서 하단 내비게이션 바로 가려지지 않고
      그 바로 위에 온전히 보이게 한다. */
-  body:has(#screen-game:not(.hidden)) .image-disclaimer {
+  body.game-active .image-disclaimer {
     flex: 0 0 auto;
     margin-top: 8px;
     font-size: 0.6rem;
@@ -830,7 +830,7 @@ select {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  body:has(#screen-game:not(.hidden)) #backBtn {
+  body.game-active #backBtn {
     flex: 0 0 auto;
     margin-top: 8px;
   }

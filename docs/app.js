@@ -198,6 +198,7 @@ function startGame(cafeteria) {
   el.screenSelect.classList.add("hidden");
   el.screenResult.classList.add("hidden");
   el.screenGame.classList.remove("hidden");
+  document.body.classList.add("game-active");
   renderMatch();
 }
 
@@ -278,6 +279,7 @@ function showResult(winner) {
   el.screenGame.classList.add("hidden");
   el.screenResult.classList.remove("hidden");
   el.resultFeedback.classList.remove("hidden");
+  document.body.classList.remove("game-active");
   fillCard(el.winnerCard, winner);
   loadWinnerStats(winner);
   renderFeedbackWidget(el.resultFeedback, "result", () => winner.cafeteria);
@@ -342,6 +344,7 @@ async function loadWinnerStats(winner) {
 el.backBtn.addEventListener("click", () => {
   el.screenGame.classList.add("hidden");
   el.screenSelect.classList.remove("hidden");
+  document.body.classList.remove("game-active");
 });
 el.restartBtn.addEventListener("click", () => {
   el.screenResult.classList.add("hidden");
