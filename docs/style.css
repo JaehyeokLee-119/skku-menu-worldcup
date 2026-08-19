@@ -784,6 +784,10 @@ select {
    대결 화면(#screen-game이 보이는 동안)에서만 #app을 뷰포트 높이로 고정하고
    카드/이미지를 flex로 남는 공간에 맞춰 줄인다. */
 @media (max-width: 639px) {
+  .progress {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+  }
   body.game-active {
     /* dvh는 카카오톡 등 인앱 브라우저에서 실제 보이는 영역과 안 맞는 경우가
        많아서, JS(app.js의 setAppVh)가 매긴 --app-vh를 우선 쓰고 dvh는
