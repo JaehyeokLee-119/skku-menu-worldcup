@@ -10,3 +10,4 @@ scraper/*_log.txt
 scraper/rank_*.py
 scraper/image_manifest.json
 /*.jpg
+backups/
