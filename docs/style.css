@@ -545,7 +545,7 @@ select {
 }
 
 .image-disclaimer {
-  margin: 18px 0 0;
+  margin: 0 0 18px;
   color: var(--sub);
   font-size: 0.72rem;
   text-align: center;
@@ -820,11 +820,11 @@ select {
     flex: 1;
     min-height: 0;
   }
-  /* 안내 문구를 한 줄로 줄여서 하단 내비게이션 바로 가려지지 않고
-     그 바로 위에 온전히 보이게 한다. */
+  /* 기기별 하단 여백 계산이 계속 어긋나서, 안내 문구는 아예 상단(진행 표시
+     바로 아래)으로 옮겨 어떤 기기의 하단 바에도 가려질 일이 없게 한다. */
   body.game-active .image-disclaimer {
     flex: 0 0 auto;
-    margin-top: 8px;
+    margin: 0 0 8px;
     font-size: 0.6rem;
     white-space: nowrap;
     overflow: hidden;
