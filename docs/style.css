@@ -780,13 +780,58 @@ select {
   .progress { max-width: 100%; }
 }
 
-/* 세로 배치(640px 미만)일 때 카드 이미지가 넉넉한 비율을 차지하도록.
-   예전에는 뷰포트 높이에 억지로 끼워 맞춰서 스크롤 자체를 막았는데,
-   기기/브라우저마다 주소창·하단 바 높이 계산이 계속 어긋나서 오히려
-   내용이 잘리는 문제가 반복됐다. 이제는 안 맞으면 그냥 자연스럽게
-   스크롤되도록 두고(항상 접근은 가능), 이미지 자체만 크게 잡아준다. */
+/* 세로 배치(640px 미만)일 때, 두 메뉴 카드가 스크롤 없이 한 화면에 다 들어오도록
+   대결 화면(#screen-game이 보이는 동안)에서만 #app을 뷰포트 높이로 고정하고
+   카드/이미지를 flex로 남는 공간에 맞춰 줄인다. */
 @media (max-width: 639px) {
-  .card-image {
-    min-height: 240px;
+  body.game-active {
+    /* dvh는 카카오톡 등 인앱 브라우저에서 실제 보이는 영역과 안 맞는 경우가
+       많아서, JS(app.js의 setAppVh)가 매긴 --app-vh를 우선 쓰고 dvh는
+       JS 실행 전 잠깐 동안의 fallback으로만 쓴다. */
+    height: var(--app-vh, 100dvh);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  /* topbar는 원래 크기 그대로, #app이 남은 공간을 전부 차지 (100dvh가 아님 -
+     그렇게 하면 topbar 높이만큼 아래로 흘러넘친다).
+     width:100%을 명시하지 않으면 topbar의 margin:0 auto가 flex 아이템
+     상태에서 "내용물 크기로 줄어들고 남는 공간을 마진이 흡수"하는 걸로
+     해석돼서 브랜드/메뉴 링크 사이 간격이 0으로 붙어버린다. */
+  body.game-active .topbar {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  body.game-active #app {
+    flex: 1;
+    min-height: 0;
+    padding-top: 16px;
+    /* 기기의 제스처 바/홈 인디케이터 뒤로 콘텐츠가 가려지지 않도록
+       안전 영역만큼 여백을 더 확보 (안전 영역이 없는 기기는 그냥 16px) */
+    padding-bottom: max(16px, env(safe-area-inset-bottom, 0px));
+    overflow: hidden;
+  }
+  body.game-active .screen,
+  body.game-active .vs-wrap,
+  body.game-active .card {
+    min-height: 0;
+  }
+  body.game-active .card-image {
+    flex: 1;
+    min-height: 0;
+  }
+  /* 기기별 하단 여백 계산이 계속 어긋나서, 안내 문구는 아예 상단(진행 표시
+     바로 아래)으로 옮겨 어떤 기기의 하단 바에도 가려질 일이 없게 한다. */
+  body.game-active .image-disclaimer {
+    flex: 0 0 auto;
+    margin: 0 0 8px;
+    font-size: 0.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body.game-active #backBtn {
+    flex: 0 0 auto;
+    margin-top: 8px;
   }
 }

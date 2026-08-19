@@ -28,6 +28,28 @@ const el = {
 
 let selectedSize = null;
 
+// 100dvh나 window.innerHeight는 주소창이 펼쳐진 채로 처음 그려질 때 등
+// 안드로이드 하단 내비바(제스처 바/3버튼 바)를 아직 안 뺀 값을 줄 때가 있다.
+// visualViewport.height는 그 순간 실제로 보이는 영역을 훨씬 더 정확히
+// 반영하므로 이걸 우선 쓰고, 로드 직후/약간의 지연 후 다시 재보정한다.
+// 기기별 하단 내비바 측정 오차에 대비한 안전 마진. 측정값을 100% 믿지 않고
+// 이만큼 덜 채워서, 계산이 조금 틀려도 문구가 가려지기 전에 여유가 남게 한다.
+const APP_VH_SAFETY_MARGIN = 32;
+
+function setAppVh() {
+  const h = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  document.documentElement.style.setProperty("--app-vh", `${h - APP_VH_SAFETY_MARGIN}px`);
+}
+setAppVh();
+window.addEventListener("load", setAppVh);
+window.addEventListener("resize", setAppVh);
+window.addEventListener("orientationchange", setAppVh);
+if (window.visualViewport) {
+  window.visualViewport.addEventListener("resize", setAppVh);
+  window.visualViewport.addEventListener("scroll", setAppVh);
+}
+setTimeout(setAppVh, 300);
+
 // 현재는 캠퍼스별 1개 식당만 제공 (자연캠 행단골식당 / 인사캠 은행골식당)
 const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
 
@@ -176,6 +198,7 @@ function startGame(cafeteria) {
   el.screenSelect.classList.add("hidden");
   el.screenResult.classList.add("hidden");
   el.screenGame.classList.remove("hidden");
+  document.body.classList.add("game-active");
   renderMatch();
 }
 
@@ -256,6 +279,7 @@ function showResult(winner) {
   el.screenGame.classList.add("hidden");
   el.screenResult.classList.remove("hidden");
   el.resultFeedback.classList.remove("hidden");
+  document.body.classList.remove("game-active");
   fillCard(el.winnerCard, winner);
   loadWinnerStats(winner);
   renderFeedbackWidget(el.resultFeedback, "result", () => winner.cafeteria);
@@ -320,6 +344,7 @@ async function loadWinnerStats(winner) {
 el.backBtn.addEventListener("click", () => {
   el.screenGame.classList.add("hidden");
   el.screenSelect.classList.remove("hidden");
+  document.body.classList.remove("game-active");
 });
 el.restartBtn.addEventListener("click", () => {
   el.screenResult.classList.add("hidden");
