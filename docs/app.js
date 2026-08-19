@@ -28,18 +28,23 @@ const el = {
 
 let selectedSize = null;
 
-// 카카오톡 인앱 브라우저 등에서 100dvh가 실제로 보이는 영역과 어긋나는 경우가
-// 있어서, window.innerHeight(그 브라우저가 실제로 그리는 높이)를 직접 재서
-// --app-vh 커스텀 속성으로 넘겨준다. 세로 배치 대결 화면의 높이 계산에 쓰인다.
+// 100dvh나 window.innerHeight는 주소창이 펼쳐진 채로 처음 그려질 때 등
+// 안드로이드 하단 내비바(제스처 바/3버튼 바)를 아직 안 뺀 값을 줄 때가 있다.
+// visualViewport.height는 그 순간 실제로 보이는 영역을 훨씬 더 정확히
+// 반영하므로 이걸 우선 쓰고, 로드 직후/약간의 지연 후 다시 재보정한다.
 function setAppVh() {
-  document.documentElement.style.setProperty("--app-vh", `${window.innerHeight}px`);
+  const h = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  document.documentElement.style.setProperty("--app-vh", `${h}px`);
 }
 setAppVh();
+window.addEventListener("load", setAppVh);
 window.addEventListener("resize", setAppVh);
 window.addEventListener("orientationchange", setAppVh);
 if (window.visualViewport) {
   window.visualViewport.addEventListener("resize", setAppVh);
+  window.visualViewport.addEventListener("scroll", setAppVh);
 }
+setTimeout(setAppVh, 300);
 
 // 현재는 캠퍼스별 1개 식당만 제공 (자연캠 행단골식당 / 인사캠 은행골식당)
 const ACTIVE_CAFETERIAS = ["행단골식당 (자과캠 학생회관 1층)", "은행골식당 (인사캠 600주년기념관 지하1층)"];
