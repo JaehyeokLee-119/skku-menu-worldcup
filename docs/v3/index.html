@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="KOrDOfrEUN9D3AdqTjw1bRF7JTJ5dpxACf7tST6a6Lo" />
+<title>성균관대 식당 메뉴 이상형 월드컵</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJEPT5KRBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GJEPT5KRBJ');
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topbar">
+  <a href="index.html" class="brand">성균관대 메뉴 월드컵</a>
+  <div class="topnav-links">
+    <a href="index.html" class="active">월드컵</a>
+    <a href="stats.html">통계</a>
+  </div>
+</nav>
+<div id="app">
+
+  <section id="screen-select" class="screen">
+    <h1>성균관대 식당 메뉴<br>이상형 월드컵</h1>
+    <p class="sub">가장 먹고 싶은 메뉴를 골라주세요</p>
+    <p class="sub-note">최근 2년동안 가장 많이 등장한 메뉴를 모았습니다</p>
+
+    <div class="select-group">
+      <label>대진 규모</label>
+      <div id="sizeButtons" class="size-buttons"></div>
+    </div>
+
+    <div id="cafeteriaButtons" class="cafeteria-buttons"></div>
+
+    <p id="dataInfo" class="data-info"></p>
+  </section>
+
+  <section id="screen-game" class="screen hidden">
+    <div class="progress">
+      <span id="matchLabel"></span>
+    </div>
+    <div class="vs-wrap">
+      <button class="card" id="cardLeft"></button>
+      <div class="vs">
+        <div class="vs-round" id="roundLabel"></div>
+        <div class="vs-label">VS</div>
+      </div>
+      <button class="card" id="cardRight"></button>
+    </div>
+    <p class="image-disclaimer">현재는 AI로 생성된 이미지입니다. 실제 메뉴와 (많이) 다를 수 있습니다.</p>
+    <button id="backBtn" class="text-btn">처음으로</button>
+  </section>
+
+  <section id="screen-result" class="screen hidden">
+    <h2>우승 메뉴</h2>
+    <div class="result-wrap">
+      <div class="winner-col">
+        <div class="card winner" id="winnerCard"></div>
+      </div>
+      <div class="winner-stats" id="winnerStats">
+        <div class="winner-stats-title">식당 메뉴 티어표</div>
+        <div id="winnerStatsBody" class="winner-stats-body">
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>티어</th>
+                <th>메뉴</th>
+                <th>승률</th>
+              </tr>
+            </thead>
+            <tbody id="winnerStatsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <button id="restartBtn" class="primary-btn">다시 하기</button>
+    </div>
+  </section>
+
+  <div id="resultFeedback" class="result-feedback-bar hidden"></div>
+
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
