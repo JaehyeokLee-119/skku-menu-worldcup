@@ -93,7 +93,12 @@ async function recordWorldcupProgress(version, eventType, bracketSize) {
         apikey: SUPABASE_ANON_KEY,
         Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
       },
-      body: JSON.stringify({ p_version: version, p_event_type: eventType, p_bracket_size: bracketSize }),
+      body: JSON.stringify({
+        p_version: version,
+        p_event_type: eventType,
+        p_bracket_size: bracketSize,
+        p_client_id: getClientId(),
+      }),
     });
   } catch (err) {
     console.warn("worldcup progress record failed", err);

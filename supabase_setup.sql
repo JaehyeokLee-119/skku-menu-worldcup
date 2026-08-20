@@ -179,3 +179,41 @@ returns table (page text, cafeteria text, answer text, cnt bigint) as $$
 $$ language sql security definer;
 
 grant execute on function get_ranking_feedback_stats() to anon;
+
+-- worldcup_progress에 client_id(ranking_feedback과 같은 브라우저 localStorage
+-- 익명 식별자)를 추가. 이제부터 쌓이는 데이터는 어떤 익명 클라이언트가
+-- 유독 여러 번 플레이했는지(개발자 테스트/헤비유저 등 이상치) 구분할 수 있다.
+-- 이 컬럼 추가 이전 기존 행은 client_id가 비어있다(소급 적용 불가).
+alter table worldcup_progress add column if not exists client_id text;
+
+-- 예전 3-인자 버전은 삭제하고 client_id 인자가 추가된 버전으로 교체
+drop function if exists record_worldcup_progress(text, text, integer);
+
+create or replace function record_worldcup_progress(p_version text, p_event_type text, p_bracket_size integer, p_client_id text default null)
+returns void as $$
+begin
+  insert into worldcup_progress (version, event_type, bracket_size, client_id)
+  values (p_version, p_event_type, p_bracket_size, p_client_id);
+end;
+$$ language plpgsql security definer;
+
+grant execute on function record_worldcup_progress(text, text, integer, text) to anon;
+
+-- client_id별 시작/완주 건수. 유독 많이 찍힌 client_id를 찾아서 그 사람의
+-- 기여분을 빼고 완주율을 다시 계산하는 데 쓴다.
+create or replace function get_worldcup_progress_by_client()
+returns table (client_id text, version text, start_count bigint, complete_count bigint) as $$
+  select
+    coalesce(s.client_id, c.client_id) as client_id,
+    coalesce(s.version, c.version) as version,
+    coalesce(s.cnt, 0) as start_count,
+    coalesce(c.cnt, 0) as complete_count
+  from
+    (select client_id, version, count(*) as cnt from worldcup_progress where event_type = 'start' group by client_id, version) s
+    full outer join
+    (select client_id, version, count(*) as cnt from worldcup_progress where event_type = 'complete' group by client_id, version) c
+    on s.client_id = c.client_id and s.version = c.version
+  order by start_count desc;
+$$ language sql security definer;
+
+grant execute on function get_worldcup_progress_by_client() to anon;

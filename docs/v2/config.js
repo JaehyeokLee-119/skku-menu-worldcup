@@ -44,6 +44,18 @@ async function recordMatch(winner, loser) {
   }
 }
 
+// 브라우저에 저장되는 익명 식별자 - 개발자 테스트/헤비유저처럼 동일 클라이언트가
+// 유독 많이 남긴 기록을 구분해서 완주율에서 빼볼 수 있게 하기 위한 용도.
+function getClientId() {
+  const KEY = "skku_menu_client_id";
+  let id = localStorage.getItem(KEY);
+  if (!id) {
+    id = (crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`);
+    localStorage.setItem(KEY, id);
+  }
+  return id;
+}
+
 async function recordWorldcupProgress(version, eventType, bracketSize) {
   try {
     await fetch(`${SUPABASE_URL}/rest/v1/rpc/record_worldcup_progress`, {
@@ -53,7 +65,12 @@ async function recordWorldcupProgress(version, eventType, bracketSize) {
         apikey: SUPABASE_ANON_KEY,
         Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
       },
-      body: JSON.stringify({ p_version: version, p_event_type: eventType, p_bracket_size: bracketSize }),
+      body: JSON.stringify({
+        p_version: version,
+        p_event_type: eventType,
+        p_bracket_size: bracketSize,
+        p_client_id: getClientId(),
+      }),
     });
   } catch (err) {
     console.warn("worldcup progress record failed", err);
